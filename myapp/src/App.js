@@ -1,43 +1,94 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.css';
-import { NavLink, Switch, Route } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useRouteMatch,
+  useParams} from 'react-router-dom';
 
-const App = () => (
-  <div className='app'>
-    <h1>WiE Garbage Collector Robot</h1>
-    <Navigation />
-    <Main />
-  </div>
-);
 
-const Navigation = () => (
-  <nav>
-    <ul>
-      <li><NavLink exact activeClassName="current" to='/'>About Us</NavLink></li>
-      <li><NavLink exact activeClassName="current" to='/robotvalidation'>Robot Control</NavLink></li>
-    </ul>
-  </nav>
-);
+class App extends Component {
+  render(){return (
+    <Router>
+      <div className="App">
+      <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/robot-controls">Get Started</Link>
+          </li>
+        </ul>
 
-const Home = () => (
-  <div className='about'>
-    <h1>WiE Design welcomes you to...</h1>
-    <p> Ipsum dolor dolorem consectetur est velit fugiat. Dolorem provident corporis fuga saepe distinctio ipsam? Et quos harum excepturi dolorum molestias?.</p>
-  </div>
-);
+        <Switch>
+          <Route path="/about">
+            <AboutUs />
+          </Route>
+          <Route path="/robot-controls">
+            <Controls />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+    );
+  }
+}
 
-const GetStarted = () => (
-  <div className='robotvalidation'>
-    <h1>Get Started</h1>
-    <p>In order to use the WiE robot, you will need a couple things:</p>
-  </div>
-);
+class Home extends Component{
+  render() {
+    return <h2>WiE Garbage Collector Robot</h2>; 
+  }
+}
 
-const Main = () => (
-  <Switch>
-      <Route exact path='/' component={Home}></Route>
-      <Route exact path='/robotvalidation' component={GetStarted}></Route>
-  </Switch>
-);
+class AboutUs extends Component{
+  render() {
+    return <h2>Women in Engineering SFU Design Team</h2>
+  }
+}
+
+function Controls() {
+  let match = useRouteMatch();
+
+  return (
+    <div>
+      <h2>Topics</h2>
+      <ul>
+        <li>
+          <Link to={`${match.url}/control-validation`}>Validation</Link>
+        </li>
+        <li>
+          <Link to={`${match.url}/control-interface`}>Main Control Panel</Link>
+        </li>
+        <li>
+          <Link to={`${match.url}/arm-control`}>
+            Arm Control Panel
+          </Link>
+        </li>
+      </ul>
+
+      <Switch>
+        <Route path={`${match.path}/:topicId`}>
+          <Topic />
+        </Route>
+        <Route path={match.path}>
+          <h3>Please select a topic.</h3>
+        </Route>
+      </Switch>
+    </div>
+  );
+}
+
+function Topic() {
+  let { topicId } = useParams();
+  return <h3>Requested topic ID: {topicId}</h3>;
+}
 
 export default App;

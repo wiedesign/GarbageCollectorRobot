@@ -1,43 +1,23 @@
-html {
-  box-sizing: border-box;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
-  padding: 0;
+ul {
+  list-style-type: none;
   margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
-.app {
-  width: 960px;
-  margin: 0 auto;
-  padding: 20px;
+li {
+  float: left;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  background-color: black;
-  margin-bottom: 20px;
-}
-
-nav ul li {
-  padding: 20px;
-}
-
-nav ul li a {
+li a {
+  display: block;
   color: white;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
 }
 
-.current {
-  border-bottom: 4px solid white;
-}
-
-h1 {
-  margin-bottom: 20px;
-}
-
-p {
-  margin-bottom: 15px;
+li a:hover {
+  background-color: #111;
 }
