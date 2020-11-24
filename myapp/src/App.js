@@ -7,6 +7,8 @@ import {
   Link,
   useRouteMatch,
   useParams} from 'react-router-dom';
+import Home from "./components/Home"
+import About from "./components/About"
 
 
 class App extends Component {
@@ -27,7 +29,7 @@ class App extends Component {
 
         <Switch>
           <Route path="/about">
-            <AboutUs />
+            <About />
           </Route>
           <Route path="/robot-controls">
             <Controls />
@@ -42,17 +44,6 @@ class App extends Component {
   }
 }
 
-class Home extends Component{
-  render() {
-    return <h2>WiE Garbage Collector Robot</h2>; 
-  }
-}
-
-class AboutUs extends Component{
-  render() {
-    return <h2>Women in Engineering SFU Design Team</h2>
-  }
-}
 
 function Controls() {
   let match = useRouteMatch();
@@ -79,7 +70,7 @@ function Controls() {
           <Topic />
         </Route>
         <Route path={match.path}>
-          <h3>Please select a topic.</h3>
+          <h3>Click below to validate your connection</h3>
         </Route>
       </Switch>
     </div>
