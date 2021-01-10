@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
+import Footer from './components/Footer/Footer.js';
 import {
   BrowserRouter as Router,
   Switch,
@@ -9,7 +10,6 @@ import {
   useParams} from 'react-router-dom';
 import Home from "./components/Home"
 import About from "./components/About"
-
 
 class App extends Component {
   render(){return (
@@ -39,6 +39,11 @@ class App extends Component {
           </Route>
         </Switch>
       </div>
+
+    <div>
+      <Footer />
+    </div>
+
 
     </Router>
     );
