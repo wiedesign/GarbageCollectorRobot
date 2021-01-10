@@ -16,16 +16,16 @@ class App extends Component {
     <Router>
       <div className="App">
       <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/robot-controls">Get Started</Link>
-          </li>
-        </ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/robot-controls">Get Started</Link>
+        </li>
+      </ul>
 
         <Switch>
           <Route path="/about">
@@ -39,6 +39,7 @@ class App extends Component {
           </Route>
         </Switch>
       </div>
+
     </Router>
     );
   }
