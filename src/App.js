@@ -1,86 +1,29 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 import './App.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useRouteMatch,
-  useParams} from 'react-router-dom';
-import Home from "./components/Home"
-import About from "./components/About"
 
+import About from './pages/About';
+import Home from './pages/Home';
 
-class App extends Component {
-  render(){return (
-    <Router>
-      <div className="App">
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/robot-controls">Get Started</Link>
-        </li>
-      </ul>
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/robot-controls">
-            <Controls />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </div>
+import Controls from './functions/Controls';
 
-    </Router>
-    );
-  }
+export default class App extends Component {
+    render() {
+        return (
+            <Router>
+                <Navbar />
+                <Switch>
+                    <Route path="/about" component={About} />
+                    <Route path="/robot-controls" component={Controls} />
+
+                    <Route path="/" exact component={Home} />
+                </Switch>
+                <Footer />
+            </Router>
+        );
+    }
 }
-
-
-function Controls() {
-  let match = useRouteMatch();
-
-  return (
-    <div>
-      <h2>Topics</h2>
-      <ul>
-        <li>
-          <Link to={`${match.url}/control-validation`}>Validation</Link>
-        </li>
-        <li>
-          <Link to={`${match.url}/control-interface`}>Main Control Panel</Link>
-        </li>
-        <li>
-          <Link to={`${match.url}/arm-control`}>
-            Arm Control Panel
-          </Link>
-        </li>
-      </ul>
-
-      <Switch>
-        <Route path={`${match.path}/:topicId`}>
-          <Topic />
-        </Route>
-        <Route path={match.path}>
-          <h3>Click below to validate your connection</h3>
-        </Route>
-      </Switch>
-    </div>
-  );
-}
-
-function Topic() {
-  let { topicId } = useParams();
-  return <h3>Requested topic ID: {topicId}</h3>;
-}
-
-export default App;
