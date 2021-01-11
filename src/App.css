@@ -1,7 +1,16 @@
+/* Global Overwrites */
+
+body {
+    margin: 0;
+}
+
+
 /* Navbar.js */
 
 .navbar {
     text-align: center;
+    font-size: 36px;
+    font-weight: 300;
 }
 
 .navbar li:last-child {
@@ -13,7 +22,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #FDD69D;
 }
 
 .navbar li {
@@ -22,14 +31,9 @@
 
 .navbar li a {
     display: block;
-    color: white;
-    text-align: center;
+    color: black;
     padding: 14px 16px;
     text-decoration: none;
-}
-
-.navbar li a:hover {
-    background-color: #111;
 }
 
 
