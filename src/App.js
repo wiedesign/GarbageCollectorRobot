@@ -3,8 +3,9 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import './App.css';
 
-import About from './pages/About';
 import Home from './pages/Home';
+import Timeline from './pages/Timeline';
+import ContactUs from './pages/ContactUs';
 
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
@@ -17,8 +18,9 @@ export default class App extends Component {
             <Router>
                 <Navbar />
                 <Switch>
-                    <Route path="/about" component={About} />
-                    <Route path="/robot-controls" component={Controls} />
+                    <Route path="/robot" component={Controls} />
+                    <Route path="/contact-us" component={ContactUs} />
+                    <Route path="/timeline" component={Timeline} />
 
                     <Route path="/" exact component={Home} />
                 </Switch>
