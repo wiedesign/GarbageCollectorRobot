@@ -9,10 +9,10 @@ export default function Navbar() {
                     <Link to="/">About</Link>
                 </li>
                 <li>
-                    <Link to="/robot">Robot</Link>
+                    <Link to="/">Robot</Link>
                 </li>
                 <li>
-                    <Link to="/timeline">Timeline</Link>
+                    <Link to="/">Timeline</Link>
                 </li>
                 <li>
                     <Link to="/contact-us">Contact Us</Link>
