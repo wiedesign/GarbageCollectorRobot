@@ -7,7 +7,7 @@
     background-color: #FDD69D;
     position: absolute;
     height: 488px;
-    width: 100%;
+    width: 1440px;
     margin:auto;
     left: 0px;
     top: 4650px;
@@ -19,8 +19,9 @@
     font-size: 48px;
     line-height: 71px;
     display: flex;
-    align-items: left;
+    align-items: center;
     color: black;
+    text-align: center;
     
 
 }
@@ -28,13 +29,10 @@
 #flex-container li a {
     
     
-    font-style: normal;
-    font-family: 'M PLUS 1p', sans-serif;
-    font-weight: 300;
-    font-size: 48px;
-    line-height: 71px;
+   
     display: inline;
-    align-items: left;
+    align-items: center;
+    text-align: center;
     color: black;
     background-color: #FDD69D;
     
@@ -72,22 +70,20 @@
   }
   
   .flex-item {
-      
-      
+            
 
       }  
 
 a {
-    font-style: normal;
-    font-family: 'M PLUS 1p', sans-serif;
-    font-weight: 300;
-    font-size: 48px;
+  
     line-height: 71px;
     display: flex;
-    align-items: left;
-    
-    
+    align-items: center;
+}
 
+.footer #title{
+    font-style: normal;
+    font-weight: normal;
 }
 
 

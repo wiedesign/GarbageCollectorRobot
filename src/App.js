@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 import Footer from './components/Footer/Footer.js';
+import Submarine from './components/Submarine/Submarine.js';
 import {
   BrowserRouter as Router,
   Switch,
@@ -39,7 +40,9 @@ class App extends Component {
           </Route>
         </Switch>
       </div>
-
+    <div>
+      <Submarine />
+    </div>
     <div>
       <Footer />
     </div>
