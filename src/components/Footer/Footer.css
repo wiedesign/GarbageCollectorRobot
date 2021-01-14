@@ -1,53 +1,65 @@
 
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+
 .footer {
    /*footer height*/
     
-    background-color: #FDD69D;
+    background-color: #A9D09E;
+
     position: absolute;
-    height: 488px;
+    height: 1024px;
     width: 1440px;
     margin:auto;
     left: 0px;
-    top: 4650px;
+    top: 5113px;
 
     /*font settings*/
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-family: 'M PLUS 1p', sans-serif;
-    font-weight: 300;
-    font-size: 48px;
-    line-height: 71px;
+    font-weight: 200;
+    font-size: 43px;
+    line-height: 64px;
     display: flex;
     align-items: center;
-    color: black;
     text-align: center;
+    
+    justify-content: center;
+    color: black;
+    
     
 
 }
 
 #flex-container li a {
     
-    
-   
     display: inline;
     align-items: center;
     text-align: center;
     color: black;
-    background-color: #FDD69D;
-    
+    background-color:  #A9D09E;
+
+    padding-top: 20px;
+    transition: 0.3s;
     
 
 }
 
 #flex-container li a:hover {
-    color: #41B3A3;
-    background-color: #FDD69D; 
+
+    margin: 20px;
+    
+
+
 }
 #flex-container {
     /* We first create a flex layout context */
     display: flex;
-    background-color :#FDD69D;
+    background-color : #A9D09E;
+
+    
     
     
     /* Then we define the flow direction 
@@ -59,31 +71,35 @@
     flex-flow: column ;
     
     /* Then we define how is distributed the remaining space */
-    justify-content: space-evenly;
     
+    align-items: center;
+    justify-content: center;
     
-    padding-left: 110px;
-    padding-top:80px;  
-    padding-bottom: 85px;
-    margin: 10px;
     list-style: none;
   }
-  
-  .flex-item {
-            
 
-      }  
+.flex-item {
 
+      padding-bottom: 21px;
+  }
+    
+.icon #flex-container{
+      
+    flex-flow: row ;   
+    
+    }  
+    
 a {
-  
     line-height: 71px;
     display: flex;
     align-items: center;
 }
 
 .footer #title{
+    font-family:  'M PLUS 1p', sans-serif;
     font-style: normal;
     font-weight: normal;
+    font-size: 64px;
 }
 
 

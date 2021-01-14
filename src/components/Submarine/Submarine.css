@@ -141,6 +141,7 @@ flex: none;
 order: 3;
 flex-grow: 0;;
 margin-right:70px;
+border-radius: 50%;
 }
 
 .frame #b1 {
@@ -149,6 +150,7 @@ width: 89px;
 height: 89px;
 left: 318px;
 top: 0px;
+border-radius: 50%;
 
 /* Inside Auto Layout */
 
@@ -224,6 +226,19 @@ position: absolute;
 left: 1066px;
 top: 3545px;
 
+
+}
+
+#b1:hover, #b2:hover, #b3:hover{
+    opacity: 1.5;
+    background-color:#adb5ba;
+    border-radius: 50%;
+    transition: 0.5s;
+   
+}
+
+.frame {
+    
 }
 
 .bub1 {
