@@ -1,7 +1,12 @@
 /* Global Overwrites */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400&display=swap');
+
 body {
     margin: 0;
+    font-family: 'M PLUS 1p', sans-serif;
 }
 
 
@@ -51,13 +56,6 @@ body {
 }
 
 
-/* Timeline.js */
-
-.timeline {
-    text-align: center;
-}
-
-
 /* Controls.js */
 
 .controls {
@@ -92,103 +90,371 @@ body {
 /* Footer.js */
 
 .footer {
-    border: 5px solid black;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: black;
+    background-color: #A9D09E;
+    padding: 10% 15%;
+}
+
+.footer-title{
+    font-family: 'M PLUS 1p';
+    font-size: 64px;
+    margin: 0;
+}
+
+.footer-email {
+    font-family: 'Poppins';
+    font-size: 43px;
+    font-weight: 300;
+    margin: 0 0 2%;
+}
+
+.footer-icons {
+    display: flex;
+}
+
+.footer-icons a {
+    margin: 0 10px;
+}
+
+.footer-icons a:hover {
+    margin: 0 50px;
 }
 
 
 
 
+/* Submarine.js */
 
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400&display=swap');
 
-.footer {
-   /*footer height*/
-    
-    background-color: #FDD69D;
+.back {
     position: absolute;
-    height: 488px;
-    width: 100%;
-    margin:auto;
+    width: 973px;
+    height: 241px;
+    left: 242px;
+    top: 3351px;
+    
+    background: #E3F4F0;
+    border: 5px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 130px;
+}
+
+.body {
+    position: absolute;
+    width: 576px;
+    height: 241px;
+    left: 242px;
+    top: 3351px;
+    
+    background: #FFF400;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 130px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+#top {
+    position: absolute;
+    width: 106px;
+    height: 132px;
+    left: 454px;
+    top: 3226.5px;
+    transform: scaleX(-1);
+
+}
+
+#fin {
+
+    position: absolute;
+    width: 123.84px;
+    height: 104.25px;
+    left: 469.35px;
+    top: 3550.71px;
+    transform: scaleX(-1);
+
+}
+
+#r1 {
+    position: absolute;
+width: 103px;
+height: 146px;
+left: 221px;
+top: 3683px;
+
+
+}
+
+#r2 {
+    position: absolute;
+width: 103px;
+height: 146px;
+left: 461px;
+top: 3701px;
+
+
+}
+
+#r3 {
+    position: absolute;
+width: 103px;
+height: 146px;
+left: 701px;
+top: 3683px;
+
+
+
+}
+
+#r4 {
+    position: absolute;
+width: 103px;
+height: 146px;
+left: 922px;
+top: 3701px;
+
+
+}
+
+#r5 {
+    position: absolute;
+width: 103px;
+height: 146px;
+left: 1120px;
+top: 3683px;
+
+
+}
+.frame {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 725px;
+height: 89px;
+left: 358px;
+top: 3427px;
+
+}
+.frame #w1 {
+    position: static;
+    width: 89px;
+    height: 89px;
+    left: 636px;
+    top: 0px;
+    
+    /* Inside Auto Layout */
+    
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+    margin-right:70px;
+
+}
+
+.frame #w2
+{
+    position: static;
+width: 89px;
+height: 89px;
+left: 477px;
+top: 0px;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 3;
+flex-grow: 0;;
+margin-right:70px;
+border-radius: 50%;
+}
+
+.frame #b1 {
+    position: static;
+width: 89px;
+height: 89px;
+left: 318px;
+top: 0px;
+border-radius: 50%;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+margin-right:70px;
+}
+
+.frame #b2 {
+position: static;
+width: 89px;
+height: 89px;
+left: 159px;
+top: 0px;
+margin-right:70px;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin-right:70px;
+}
+
+.frame #b3 {
+    position: static;
+    width: 89px;
+    height: 89px;
     left: 0px;
-    top: 4650px;
-
-    /*font settings*/
-    font-style: normal;
-    font-family: 'M PLUS 1p', sans-serif;
-    font-weight: 300;
-    font-size: 48px;
-    line-height: 71px;
-    display: flex;
-    align-items: left;
-    color: black;
+    top: 0px;
     
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-right:70px;
+    
+}
+
+#a1 {
+position: absolute;
+width: 67px;
+height: 163px;
+left: 285px;
+top: 3515px;
 
 }
 
-#flex-container li a {
-    
-    
-    font-style: normal;
-    font-family: 'M PLUS 1p', sans-serif;
-    font-weight: 300;
-    font-size: 48px;
-    line-height: 71px;
-    display: inline;
-    align-items: left;
-    color: black;
-    background-color: #FDD69D;
-    
-    
+#a2 {
+    position: absolute;
+    width: 21px;
+    height: 170px;
+    left: 527px;
+    top: 3520px;
+}
+
+#a3 {
+    position: absolute;
+    left: 771px;
+    top: 3548px;
+}
+
+#a4 {
+    position: absolute;
+    left: 925px;
+    top: 3545px;
+}
+
+#a5 {
+
+position: absolute;
+left: 1066px;
+top: 3545px;
+
 
 }
 
-#flex-container li a:hover {
-    color: #41B3A3;
-    background-color: #FDD69D; 
+#b1:hover, #b2:hover, #b3:hover{
+    opacity: 1.5;
+    background-color:#adb5ba;
+    border-radius: 50%;
+    transition: 0.5s;
 }
-#flex-container {
-    /* We first create a flex layout context */
-    display: flex;
-    background-color :#FDD69D;
-    
-    
-    /* Then we define the flow direction 
-       and if we allow the items to wrap 
-     * Remember this is the same as:
-     * flex-direction: row;
-     * flex-wrap: wrap;
-     */
-    flex-flow: column ;
-    
-    /* Then we define how is distributed the remaining space */
-    justify-content: space-evenly;
-    
-    
-    padding-left: 110px;
-    padding-top:80px;  
-    padding-bottom: 85px;
-    margin: 10px;
-    list-style: none;
-  }
-  
-  .flex-item {
-      
-      
 
-      }  
+.bub1 {
+position: absolute;
+width: 18px;
+height: 18px;
+left: 368.5px;
+top: 3240px;
+border-radius: 50%;
 
-a {
-    font-style: normal;
-    font-family: 'M PLUS 1p', sans-serif;
-    font-weight: 300;
-    font-size: 48px;
-    line-height: 71px;
-    display: flex;
-    align-items: left;
-    
-    
+background: #6CA79B;
+transform: rotate(-180deg);
 
 }
 
+.bub2 {
+position: absolute;
+width: 37px;
+height: 37px;
+left: 353.4px;
+top: 3153px;
+border-radius: 50%;
 
-  
+background: #6CA79B;
+transform: rotate(-180deg);
+}
+
+.bub3 {
+    position: absolute;
+width: 37px;
+height: 37px;
+left: 417px;
+top: 3091.5px;
+border-radius: 50%;
+
+background: #6CA79B;
+transform: rotate(-180deg);
+}
+
+.header {
+    position: absolute;
+width: 570px;
+height: 108px;
+left: 622px;
+top: 3169px;
+
+font-family: 'M PLUS 1p', sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 64px;
+line-height: 95px;
+text-align: center;
+
+color: #000000;
+}
+
+#controlSand {
+    position: absolute;
+    top: 4132.4px;
+    left: 105px
+}
+
+h1{
+position: absolute;
+width: 843px;
+height: 107px;
+left: 300px;
+top: 4220px;
+font-family: 'M PLUS 1p', sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 64px;
+line-height: 95px;
+text-align: center;
+
+display: flex;
+align-items: center;
+text-align: center;
+
+}
+
+h3 {
+font-family: 'M PLUS 1p', sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 64px;
+position:absolute;
+line-height: 95px;
+text-align: center;
+left: 380px;
+top: 3355px;
+
+
+}
