@@ -125,15 +125,31 @@ img {
 .timeline-submarine {
     display: flex;
     justify-content: space-between;
-    background-image: url('/images/timeline/submarine5.png');
+    background-image: url('/images/timeline/submarine3.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     padding: 30% 20% 15%;
 }
 
-.timeline-active {
-    /* background-image: url('/images/timeline/submarine3.png'); */
+.timeline-active1 {
+    background-image: url('/images/timeline/submarine1.png');
+}
+
+.timeline-active2 {
+    background-image: url('/images/timeline/submarine2.png');
+}
+
+.timeline-active1 {
+    background-image: url('/images/timeline/submarine3.png');
+}
+
+.timeline-active1 {
+    background-image: url('/images/timeline/submarine1.png');
+}
+
+.timeline-active1 {
+    background-image: url('/images/timeline/submarine1.png');
 }
 
 .timeline-submarine p {
@@ -143,6 +159,7 @@ img {
     padding: 0 2.5%;
     font-size: 45px;
     font-weight: 300;
+    cursor: pointer;
 }
 
 /* Footer.js */
