@@ -15,6 +15,9 @@ export default function Navbar() {
                     <Link to="/">Timeline</Link>
                 </li>
                 <li>
+                    <Link to="/">Controls</Link>
+                </li>
+                <li>
                     <Link to="/contact-us">Contact Us</Link>
                 </li>
             </ul>

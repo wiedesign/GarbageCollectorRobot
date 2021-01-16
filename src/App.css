@@ -4,57 +4,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
 body {
     margin: 0;
     font-family: 'M PLUS 1p', sans-serif;
 }
 
-
-/* Navbar.js */
-
-.navbar {
-    text-align: center;
-    font-size: 36px;
-    font-weight: 300;
-}
-
-.navbar li:last-child {
-    float: right;
-}
-
-.navbar ul {
-    list-style-type: none;
+p {
     margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #FDD69D;
 }
 
-.navbar li {
-    float: left;
+img {
+    max-width: 100%;
 }
-
-.navbar li a {
-    display: block;
-    color: black;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-
-/* Home.js */
-
-.home {
-    text-align: center;
-}
-
-
-/* ContactUs.js */
-
-.contact-us {
-    text-align: center;
-}
-
 
 /* Controls.js */
 
@@ -87,41 +50,58 @@ body {
 }
 
 
-/* Footer.js */
+/* ContactUs.js */
 
-.footer {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    color: black;
-    background-color: #A9D09E;
-    padding: 10% 15%;
+.contact-us {
+    text-align: center;
 }
 
-.footer-title{
-    font-family: 'M PLUS 1p';
-    font-size: 64px;
-    margin: 0;
-}
 
-.footer-email {
-    font-family: 'Poppins';
-    font-size: 43px;
+/* Navbar.js */
+
+.navbar {
+    text-align: center;
+    font-size: 36px;
     font-weight: 300;
-    margin: 0 0 2%;
 }
 
-.footer-icons {
-    display: flex;
+.navbar li:last-child {
+    float: right;
 }
 
-.footer-icons a {
-    margin: 0 10px;
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FDD69D;
 }
 
-.footer-icons a:hover {
-    margin: 0 50px;
+.navbar li {
+    float: left;
 }
+
+.navbar li a {
+    display: block;
+    font-family: 'Barlow';
+    font-size: 36px;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/* Home.js */
+
+.home {
+    border: 60px solid #9AD6F3;
+    text-align: center;
+}
+
+.home-controls {
+    padding-bottom: 20%;
+}
+
 
 
 /* Timeline.js */
@@ -133,4 +113,51 @@ body {
 .timeline-title {
     font-family: 'Open Sans';
     font-size: 64px;
+}
+
+
+/* Footer.js */
+
+.footer {
+    text-align: right;
+    color: black;
+    background-color: #A9D09E;
+    padding: 2%;
+}
+
+.footer-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 20%;
+}
+
+.footer-container-title{
+    font-family: 'M PLUS 1p';
+    font-size: 64px;
+    margin: 0;
+}
+
+.footer-container-email {
+    font-family: 'Poppins';
+    font-size: 43px;
+    font-weight: 300;
+    margin: 0 0 2%;
+}
+
+.footer-container-icons {
+    display: flex;
+}
+
+.footer-container-icons a {
+    margin: 0 10px;
+}
+
+.footer-icons a:hover {
+    margin: 0 50px;
+}
+
+.footer-text {
+    font-family: 'Poppins';
+    font-size: 30px;
 }
