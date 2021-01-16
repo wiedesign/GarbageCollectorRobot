@@ -99,9 +99,16 @@ img {
 }
 
 .home-controls {
-    padding-bottom: 20%;
+    background-image: url('/images/islands/island5.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-family: 'Barlow';
+    font-size: 72px;
+    font-weight: 300;
+    width: 95%;
+    margin: 0 2.5% 15%;
+    padding: 13% 0 19%;
 }
-
 
 
 /* Timeline.js */
@@ -115,6 +122,28 @@ img {
     font-size: 64px;
 }
 
+.timeline-submarine {
+    display: flex;
+    justify-content: space-between;
+    background-image: url('/images/timeline/submarine5.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30% 20% 15%;
+}
+
+.timeline-active {
+    /* background-image: url('/images/timeline/submarine3.png'); */
+}
+
+.timeline-submarine p {
+    background-color: #E3F4F0;
+    border: 10px solid white;
+    border-radius: 50%;
+    padding: 0 2.5%;
+    font-size: 45px;
+    font-weight: 300;
+}
 
 /* Footer.js */
 
@@ -153,7 +182,7 @@ img {
     margin: 0 10px;
 }
 
-.footer-icons a:hover {
+.footer-container-icons a:hover {
     margin: 0 50px;
 }
 

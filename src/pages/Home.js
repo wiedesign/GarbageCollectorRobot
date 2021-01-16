@@ -7,8 +7,8 @@ export default function Home() {
         <div className="home">
             <h1>About the Women in Engineering Design Team</h1>
             <Timeline />
-            
-            <img src="/images/islands/island5.png" alt="" className="home-controls" />
+
+            <p className="home-controls">Take me to the controls</p>
         </div>  
     )
 }
