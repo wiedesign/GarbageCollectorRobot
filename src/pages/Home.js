@@ -8,7 +8,9 @@ export default function Home() {
             <h1>About the Women in Engineering Design Team</h1>
             <Timeline />
 
-            <p className="home-controls">Take me to the controls</p>
+            <div className = "controlIsland">
+                <p className="home-controls">Take me to the controls</p>
+            </div>
         </div>  
     )
 }
