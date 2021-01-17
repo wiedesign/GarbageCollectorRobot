@@ -7,7 +7,12 @@ export default function Home() {
     return (
         <div className="home">
             <FirstPage />
+            
             <h1>About the Women in Engineering Design Team</h1>
+            
+            
+            
+            
             <Timeline />
 
             <div className = "controlIsland">
