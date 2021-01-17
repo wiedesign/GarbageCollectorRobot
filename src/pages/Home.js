@@ -1,12 +1,12 @@
 import React from 'react';
 
+import FirstPage from '../components/FirstPage';
 import Timeline from '../components/Timeline';
 
 export default function Home() {
     return (
         <div className="home">
-            <h1>About the Women in Engineering Design Team</h1>
-                <Timeline />
+            <FirstPage />
             <div className = "aboutIsland">
                 <p  id="about-title">About WiE Design Team</p>
                 <p  id="about-body">Women in Engineering Design Team (WiE Design) 
@@ -18,8 +18,9 @@ export default function Home() {
                 listen to ideas from other women, build their design knowledge and technical skills in fields such as
                 engineering, marketing and business, and most importantly to gain confidence in their abilities.</p>
             </div>
+            <Timeline />
             <div className = "controlIsland">
-               <p className="home-controls">Take me to the controls</p>
+                <p className="home-controls">Take me to the controls</p>
             </div>
         </div>  
     )

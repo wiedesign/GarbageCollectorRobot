@@ -90,6 +90,7 @@ img {
     color: black;
     padding: 14px 16px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 
@@ -98,6 +99,7 @@ img {
 
 .home {
     border: 60px solid #9AD6F3;
+    background-color: #EAF6FC;
     text-align: center;
 }
 
@@ -113,15 +115,14 @@ img {
     padding: 13% 0 19%;
 }
 
-.aboutIsland  {
+.aboutIsland {
     background-image: url('/images/islands/island2.png');
     background-size: contain;
-    background-repeat: no-repeat;;
-    width: 95%;
-    margin: 2 2.5% 15%;
-    padding: 4% 0 19%;
-}
+    background-repeat: no-repeat;
+    margin: 0 2.5% 0%;
+    padding: 5% 0 10%;
 
+}
 
 .aboutIsland #about-title {
     font-family: 'Archivo', sans-serif;
@@ -141,6 +142,67 @@ img {
  }
 
 
+/* FirstPage.js */
+
+.first-page {
+    text-align: end;
+    padding-top: 15%;
+    border: 1px solid black;
+}
+
+.first-page-logo {
+    position: absolute;
+    left: 300px;
+    top: 80px;
+    z-index: 50;
+}
+
+.first-page-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+    padding-top: 10%;
+}
+
+.first-page-container img:first-child {
+    padding-left: 8%;
+}
+
+.first-page-container-info {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    background-image: url('/images/islands/island1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 5% 6% 7% 1%;
+    height: 22vh;
+    width: 18%;
+    margin-bottom: 3%;
+}
+
+.first-page-container-info p {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.first-page-container-info p:last-child {
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #A1D9F4;
+    padding: 3% 0;
+}
+
+.first-page img:last-child {
+    position: relative;
+    left: 55px;
+    margin-bottom: 5%;
+}
+
+
 
 /* Timeline.js */
 
@@ -156,15 +218,31 @@ img {
 .timeline-submarine {
     display: flex;
     justify-content: space-between;
-    background-image: url('/images/timeline/submarine5.png');
+    background-image: url('/images/timeline/submarine3.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     padding: 30% 20% 15%;
 }
 
-.timeline-active {
-    /* background-image: url('/images/timeline/submarine3.png'); */
+.timeline-active1 {
+    background-image: url('/images/timeline/submarine1.png');
+}
+
+.timeline-active2 {
+    background-image: url('/images/timeline/submarine2.png');
+}
+
+.timeline-active1 {
+    background-image: url('/images/timeline/submarine3.png');
+}
+
+.timeline-active1 {
+    background-image: url('/images/timeline/submarine1.png');
+}
+
+.timeline-active1 {
+    background-image: url('/images/timeline/submarine1.png');
 }
 
 .timeline-submarine p {
@@ -174,8 +252,8 @@ img {
     padding: 0 2.5%;
     font-size: 45px;
     font-weight: 300;
+    cursor: pointer;
 }
-
 
 /* Footer.js */
 

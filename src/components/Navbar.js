@@ -9,38 +9,47 @@ export default function Navbar() {
             <ul>
                 <li>
                     <Scroll
-                    activeClass="active"
-                    to="aboutIsland"
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={500}>
-                    <Link to="/">About</Link>   
+                        activeClass="active"
+                        to="aboutIsland"
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={500}>
+                        About
                     </Scroll>
                 </li>
                 <li>
-                    <Link to="/">Robot</Link>
+                    <Scroll
+                        activeClass="active"
+                        to="robot"
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={500}>
+                        Robot
+                    </Scroll>
                 </li>
                 <li>
                     <Scroll
-                    activeClass="active"
-                    to="timeline"
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={500}>
-                    <Link to="/">Timeline</Link>
+                        activeClass="active"
+                        to="timeline"
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={500}>
+                        Timeline
                     </Scroll>
                 </li>
                 <li>
                     <Scroll 
-                     activeClass="active"
-                     to="controlIsland"
-                     spy={true}
-                     smooth={true}
-                     offset={-100}
-                     duration={500}> <Link to="/">Controls</Link></Scroll>
-                    
+                        activeClass="active"
+                        to="controlIsland"
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={500}> 
+                        Controls
+                    </Scroll>
                 </li>
                 <li>
                     <Link to="/contact-us">Contact Us</Link>
