@@ -1,39 +1,54 @@
 import React from 'react'
-import { Link as Scroll, animateScroll as scroll} from 'react-scroll';
-import { Link} from 'react-router-dom';
-
+import { Link as Scroll } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
     return (
         <div className="navbar">
             <ul>
                 <li>
-                    <Link to="/">About</Link>
-                    
-                </li>
-                <li>
-                    <Link to="/">Robot</Link>
+                    <Scroll
+                        activeClass="active"
+                        to="about"
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={500}>
+                        About
+                    </Scroll>
                 </li>
                 <li>
                     <Scroll
-                    activeClass="active"
-                    to="timeline"
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={500}><Link to="/">Timeline</Link></Scroll>
-                    
-
+                        activeClass="active"
+                        to="robot"
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={500}>
+                        Robot
+                    </Scroll>
+                </li>
+                <li>
+                    <Scroll
+                        activeClass="active"
+                        to="timeline"
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={500}>
+                        Timeline
+                    </Scroll>
                 </li>
                 <li>
                     <Scroll 
-                     activeClass="active"
-                     to="controlIsland"
-                     spy={true}
-                     smooth={true}
-                     offset={-100}
-                     duration={500}> <Link to="/">Controls</Link></Scroll>
-                    
+                        activeClass="active"
+                        to="controlIsland"
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={500}> 
+                        Controls
+                    </Scroll>
                 </li>
                 <li>
                     <Link to="/contact-us">Contact Us</Link>
