@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link as Scroll} from 'react-scroll';
-import { Link} from 'react-router-dom';
+// import { Link} from 'react-router-dom';
 
 
 export default function Navbar() {
@@ -52,7 +52,15 @@ export default function Navbar() {
                     </Scroll>
                 </li>
                 <li>
-                    <Link to="/contact-us">Contact Us</Link>
+                    <Scroll 
+                        activeClass="active"
+                        to="footer"
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={500}> 
+                        Contact Us
+                    </Scroll>
                 </li>
             </ul>
         </div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Footer() {
     return (
-        <div className="footer" id="footerTest">
+        <div className="footer">
             <div className="footer-container">
                 <p className="footer-container-title">Contact Us</p>
                 <p className="footer-container-email">email: wie@sfu.ca</p>
