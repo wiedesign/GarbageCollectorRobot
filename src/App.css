@@ -62,6 +62,9 @@ img {
 /* Navbar.js */
 
 .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 200;
     text-align: center;
     font-size: 36px;
     font-weight: 300;
@@ -121,7 +124,6 @@ img {
     background-repeat: no-repeat;
     margin: 0 2.5% 0%;
     padding: 3.5% 0 10%;
-
 }
 
 .aboutIsland #about-title {
@@ -132,8 +134,7 @@ img {
     padding-bottom: 1%;
 }
 
-
- .aboutIsland #about-body {
+.aboutIsland #about-body {
     font-family: 'Poppins';
     font-size: 1.55vw;
     font-weight: 300;
@@ -141,8 +142,7 @@ img {
     padding-right: 5%;
  }
 
-
- .nameIsland {
+.nameIsland {
     background-image: url('/images/islands/island4.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -179,6 +179,8 @@ img {
     margin-left: 11%;
     margin-right: 7%;
 }
+
+
 /* FirstPage.js */
 
 .first-page {
@@ -188,7 +190,7 @@ img {
 
 .first-page-logo {
     position: absolute;
-    left: 300px;
+    left: 21%;
     top: 80px;
     z-index: 50;
 }

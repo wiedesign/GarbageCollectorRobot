@@ -7,9 +7,6 @@ export default function Home() {
     return (
         <div className="home">
             <FirstPage />
-            
-            <h1>About the Women in Engineering Design Team</h1>
-            
             <div className= "aboutIsland">
                 <p  id="about-title">About WiE Design Team</p>
                 <p  id="about-body">Women in Engineering Design Team (WiE Design) 
