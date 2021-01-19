@@ -2,6 +2,7 @@ import React from 'react';
 
 import FirstPage from '../components/FirstPage';
 import Timeline from '../components/Timeline';
+import MeetOurRobot from '../components/MeetOurRobot';
 
 export default function Home() {
     return (
@@ -18,6 +19,7 @@ export default function Home() {
                 listen to ideas from other women, build their design knowledge and technical skills in fields such as
                 engineering, marketing and business, and most importantly to gain confidence in their abilities.</p>
             </div>
+            <MeetOurRobot />
             <div className="robot">
                 <div className="nameIsland">
                     <p id="name-title">DARCY</p>
