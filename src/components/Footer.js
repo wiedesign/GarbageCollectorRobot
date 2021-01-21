@@ -17,8 +17,13 @@ export default function Footer() {
                         <img src="/images/footer/instagram.png"alt="" />
                     </a>
                 </div>
+                <div className="footer-wie-club-button">
+                    <a href="https://www.instagram.com/wiesfu/" target="_blank" rel="noopener noreferrer" >
+                        <img src="/images/footer/website-button.png"alt="" />
+                    </a>
+                </div>
             </div>
-            <p className="footer-text">Webapp created by WiE Design Team</p>
+            <p className="footer-text">webapp created by WiE Design Team</p>
         </div>
     )
 }
