@@ -97,7 +97,6 @@ img {
 }
 
 
-
 /* Home.js */
 
 .home {
@@ -111,7 +110,7 @@ img {
     background-size: contain;
     background-repeat: no-repeat;
     font-family: 'Barlow';
-    font-size: 72px;
+    font-size: 6vw;
     font-weight: 300;
     width: 95%;
     margin: 0 2.5% 15%;
@@ -181,7 +180,87 @@ img {
 }
 
 
+
+/* MeetOurRobot.js */
+
+
+.meet-robot {
+    margin-left: 5%;
+} 
+
+.meet-robot .meet-robot-top-section {
+    margin-left: -30%;
+}
+
+.meet-robot .meet-robot-top-section .meet-robot-bubble2 {
+    margin-left: 25%
+}
+
+.meet-robot p {
+    font-family:'Barlow';
+    font-size: 4vw;
+    text-align: center;
+    margin-right: 58%;
+    padding-bottom: 0%;
+}
+
+.meet-robot .bubble-group {
+    padding-bottom: 10%;
+    margin-top: -8%
+}
+
+.meet-robot .meet-robot-bubble1 {
+  height: 2vw;
+  width: 2vw;
+  background-color: #9CBCCC;
+  border-radius: 50%;
+  animation: pulse 5s infinite;
+  margin-left: 30%;
+}
+
+.meet-robot .meet-robot-bubble2{ 
+    height: 4vw;
+    width: 4vw;
+    background-color: #9CBCCC;
+    border-radius: 50%;
+    animation: pulse 5s infinite;
+    margin-left: 34%;
+}
+
+.meet-robot .meet-robot-bubble3 {
+    height: 3vw;
+    width: 3vw;
+    background-color: #9CBCCC;
+    border-radius: 50%;
+    animation: pulse 5s infinite;
+    margin-left: 30%; 
+}
+
+.meet-robot .meet-robot-turtle {
+    transform: matrix(-0.96, 0.28, 0.28, 0.96, 0, 0);
+    width: 20%;
+    margin-left: -80%;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(.7);
+        transform: translate(0%, 50%);
+    }
+    50% {
+        transform: scale(1.5);
+        transform: translate(50%, -50%);
+    }
+    100% {
+        transform: scale(.7);
+        transform: translate(0%, 50%);
+    }
+}
+
+
+
 /* FirstPage.js */
+
 
 .first-page {
     text-align: end;
@@ -303,6 +382,15 @@ img {
     font-size: 45px;
     font-weight: 300;
     cursor: pointer;
+}
+
+.timeline-title {
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 5vw;
+    margin-left: 34%;
+    margin-top: 10%;
+    margin-bottom: -15%;
 }
 
 /* Footer.js */
