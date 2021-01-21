@@ -336,62 +336,43 @@ img {
 /* Timeline.js */
 
 .timeline {
-    border: 1px solid black;
-}
-
-.timeline-title {
-    font-family: 'Open Sans';
-    font-size: 64px;
+    border: 5px solid black;
 }
 
 .timeline-submarine {
-    display: flex;
-    justify-content: space-between;
     background-image: url('/images/timeline/submarine3.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 30% 20% 15%;
 }
 
-.timeline-active1 {
-    background-image: url('/images/timeline/submarine1.png');
+.timeline-submarine-title {
+    font-family: 'Barlow';
+    font-size: 43px;
 }
 
-.timeline-active2 {
-    background-image: url('/images/timeline/submarine2.png');
+.timeline-submarine-windows {
+    display: flex;
+    justify-content: space-between;
+    padding: 9% 12% 10%;
 }
 
-.timeline-active3 {
-    background-image: url('/images/timeline/submarine3.png');
-}
-
-.timeline-active4 {
-    background-image: url('/images/timeline/submarine1.png');
-}
-
-.timeline-active5 {
-    background-image: url('/images/timeline/submarine1.png');
-}
-
-.timeline-submarine p {
-    background-color: #E3F4F0;
-    border: 10px solid white;
+.timeline-submarine-windows p {
+    background-color: #CDFCFF;
     border-radius: 50%;
-    padding: 0 2.5%;
-    font-size: 45px;
+    padding: 0.75% 2.5%;
+    font-size: 35px;
     font-weight: 300;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
     cursor: pointer;
 }
 
-.timeline-title {
-    font-family: 'Poppins';
-    font-weight: 300;
-    font-size: 5vw;
-    margin-left: 34%;
-    margin-top: 10%;
-    margin-bottom: -15%;
+.timeline-stage {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12%;
 }
+
 
 /* Footer.js */
 

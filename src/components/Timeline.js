@@ -1,69 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function Timeline() {
 
-    let timelineDescription;
-
-    let activeClass = [''];
-
-    const firstActive = () => {
-        activeClass.splice(0, 1);
-        activeClass.push('timeline-active1');
-        timelineDescription = (
-            <p>First</p>
-        )
-        console.log(activeClass[0]);
-    }
-
-    const secondActive = () => {
-        activeClass.splice(0, 1);
-        activeClass.push('timeline-active2');
-        timelineDescription = (
-            <p>Second</p>
-        )
-        console.log(activeClass[0]);
-    }
-
-    const thirdActive = () => {
-        activeClass.splice(0, 1);
-        activeClass.push('timeline-active3');
-        timelineDescription = (
-            <p>Third</p>
-        )
-        console.log(activeClass[0]);
-    }
-
-    const fourthActive = () => {
-        activeClass.splice(0, 1);
-        activeClass.push('timeline-active4');
-        timelineDescription = (
-            <p>Fourth</p>
-        )
-        console.log(activeClass[0]);
-    }
-
-    const fifthActive = () => {
-        activeClass.splice(0, 1);
-        activeClass.push('timeline-active5');
-        timelineDescription = (
-            <p>Fifth</p>
-        )
-        console.log(activeClass[0]);
-    }
-
-    
+    const [activeClass, setActiveClass] = useState('');   
 
     return (
         <div className ="timeline">
-            <p className="timeline-title">Project Timeline</p>
-            <div className={"timeline-submarine " + activeClass[0]}>
-                <p onClick={firstActive}>1</p>
-                <p onClick={secondActive}>2</p>
-                <p onClick={thirdActive}>3</p>
-                <p onClick={fourthActive}>4</p>
-                <p onClick={fifthActive}>5</p>
+            <div className="timeline-submarine">
+                <p className="timeline-submarine-title">Project Stages</p>
+                <div className="timeline-submarine-windows">
+                    <p onClick={() => setActiveClass('timeline-active1')}>1</p>
+                    <p onClick={() => setActiveClass('timeline-active2')}>2</p>
+                    <p onClick={() => setActiveClass('timeline-active3')}>3</p>
+                    <p onClick={() => setActiveClass('timeline-active4')}>4</p>
+                    <p onClick={() => setActiveClass('timeline-active5')}>5</p>
+                    <p onClick={() => setActiveClass('timeline-active6')}>6</p>
+                    <p onClick={() => setActiveClass('timeline-active7')}>7</p>
+                </div>
             </div>
-            {timelineDescription}
+            <div className="timeline-stage">
+                <p>Lorem Lorem ex veniam nostrud tempor eu aliqua exercitation reprehenderit sint aute pariatur consectetur.</p>
+                <p>Commodo commodo dolor sint ipsum.</p>
+                <p>Magna irure reprehenderit incididunt ex sit sit veniam voluptate amet excepteur amet consequat.</p>
+                <p>Mollit enim fugiat labore duis et sunt sint.</p>
+                <p>Sit est veniam duis non deserunt excepteur qui.</p>
+                <p>Reprehenderit do ipsum duis occaecat irure ad nisi commodo est.</p>
+                <p>Cupidatat nulla amet amet in velit cillum elit exercitation cillum.</p>
+            </div>
         </div>
     )
 }
