@@ -12,6 +12,11 @@ return (
                     club at Simon Fraser University. WiE Design consists of self-identifying females and 
                     other under-represented groups in STEM. We have members from a wide range of programs
                     such as Computer engineering, </p>
+                    <div className="name-bubbles">
+                        <div className = "nameIsland-bubble1" />
+                        <div className = "nameIsland-bubble2" />
+                        <div className = "nameIsland-bubble3" />
+                    </div>
                 </div>
             </div>
 )
