@@ -1,10 +1,11 @@
 import React from 'react';
 
 import FirstPage from '../components/FirstPage';
-import Timeline from '../components/Timeline';
-import MeetOurRobot from '../components/MeetOurRobot';
 import AboutIsland from '../components/AboutIsland';
+import MeetOurRobot from '../components/MeetOurRobot';
 import NameIsland from '../components/NameIsland';
+import Timeline from '../components/Timeline';
+import HomeControls from '../components/HomeControls';
 
 export default function Home() {
     return (
@@ -12,12 +13,10 @@ export default function Home() {
             <FirstPage />
             <AboutIsland />
             <MeetOurRobot />
-            <img src="/images/islands/island3.png"/>
+            <img src="/images/islands/island3.png" alt="" />
             <NameIsland />
             <Timeline />
-            <div className="home-controls">
-                <p>Click for Controls</p>
-            </div>
+            <HomeControls />
         </div>  
     )
 }

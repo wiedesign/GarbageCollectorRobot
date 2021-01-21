@@ -52,13 +52,6 @@ img {
 }
 
 
-/* ContactUs.js */
-
-.contact-us {
-    text-align: center;
-}
-
-
 /* Navbar.js */
 
 .navbar {
@@ -106,43 +99,105 @@ img {
     text-align: center;
 }
 
-.home-controls {
-    background-image: url('/images/islands/island5.png');
+
+/* FirstPage.js */
+
+.first-page {
+    text-align: end;
+    padding-top: 15%;
+}
+
+.first-page-logo {
+    position: absolute;
+    left: 25%;
+    top: 150px;
+    z-index: 50;
+}
+
+.first-page-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+    margin-top: 12%;
+}
+
+.first-page-container img:first-child {
+    margin-left: 19%;
+    margin-top: 7%;
+}
+
+.first-page-container-info {
+    display: flex;
+    flex-flow: column;
+    background-image: url('/images/islands/island1.png');
     background-size: contain;
     background-repeat: no-repeat;
-    font-family: 'Barlow';
-    font-size: 30%;
+    padding: 3% 1% 0 0;
+    height: 24vh;
+    width: 13%;
+    margin-right: 17%;
+}
+
+.first-page-container-info p:first-child {
+    font-family: 'Montserrat';
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.first-page-container-info p:last-child {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.first-page img:last-child {
+    position: relative;
+    right: 10%;
+    margin-bottom: 5%;
+}
+
+
+/* AboutIsland.js */
+
+.about-island {
+    background-image: url('/images/islands/island2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 5% 0 7%;
+    margin-right: 4%;
+}
+
+.about-island .about-island-title {
+    font-family: 'Archivo', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.about-island .about-island-body {
+    font-family: 'Poppins';
+    font-size: 19px;
     font-weight: 300;
-    width: 95%;
-    margin: 0 23.5% 15%;
-    padding: 13% 0 19%;
-    text-align: center;
-}
+    line-height: 40px;
+    padding: 2% 15% 0;
+ }
 
-.home-controls p {
-    margin-top: -4%;
-    margin-left: -43%;
-    margin-bottom: 0;
-    font-size: 3vw;
-}
 
-.home-controls:hover {
-    opacity:80%;
-}
-
-/*MeetOurRobot.js */
-
+/* MeetOurRobot.js */
 
 .meet-robot {
     margin-left: 15%;
-    margin-bottom:12%
+    margin-bottom: 12%
 } 
 
-.meet-robot .meet-robot-top-section {
+.meet-robot-top {
     margin-left: -30%;
 }
 
-.meet-robot .meet-robot-top-section .meet-robot-bubble2 {
+.meet-robot-top .meet-robot-bubble2 {
     margin-left: 27%;
     margin-bottom: 1%;
 }
@@ -156,12 +211,7 @@ img {
     font-weight: 600;
 }
 
-.meet-robot .bubble-group {
-    padding-bottom: 10%;
-    margin-top: -8%
-}
-
-.meet-robot .meet-robot-bubble1 {
+.meet-robot-bubble1 {
   height: 2vw;
   width: 2vw;
   background-color: #9CBCCC;
@@ -170,7 +220,7 @@ img {
   margin-left: 30%;
 }
 
-.meet-robot .meet-robot-bubble2{ 
+.meet-robot-bubble2{ 
     height: 2vw;
     width: 2vw;
     background-color: #9CBCCC;
@@ -179,19 +229,13 @@ img {
     margin-left: 32%;
 }
 
-.meet-robot .meet-robot-bubble3 {
+.meet-robot-bubble3 {
     height: 1vw;
     width: 1vw;
     background-color: #9CBCCC;
     border-radius: 50%;
     animation: pulse 5s infinite;
     margin-left: 30%; 
-}
-
-.meet-robot .meet-robot-turtle {
-    transform: matrix(-0.96, 0.28, 0.28, 0.96, 0, 0);
-    width: 20%;
-    margin-left: -80%;
 }
 
 @keyframes pulse {
@@ -209,46 +253,19 @@ img {
     }
 }
 
-/*AboutIsland.js */
 
-.aboutIsland {
-    background-image: url('/images/islands/island2.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: 0 2.5% 0%;
-    padding: 3.5% 0 10%;
-}
+/* NameIsland.js */
 
-.aboutIsland #about-title {
-    font-family: 'Archivo', sans-serif;
-    font-size: 3.8vw;
-    font-weight: 500;
-    padding-top: 1.5%;
-    padding-bottom: 1%;
-}
-
-.aboutIsland #about-body {
-    font-family: 'Poppins';
-    font-size: 1.55vw;
-    font-weight: 300;
-    margin: 0 10% 19%;
-    padding-right: 5%;
- }
-
-
-/*NameIsland */
-
-.nameIsland {
+.name-island {
     background-image: url('/images/islands/island4.png');
     background-size: contain;
     background-repeat: no-repeat;
     margin: 0 10% 0%;
     padding: 4.5% 0 10%;
-    width:50%;
+    width: 50%;
  }
 
-
-.nameIsland #name-title {
+.name-island-title {
     font-family: 'Archivo', sans-serif;
     font-size: 2.9vw;
     font-weight: 500;
@@ -258,7 +275,7 @@ img {
     
 }
 
-.nameIsland #name-subtitle {
+.name-island-subtitle {
     font-family: 'Archivo', sans-serif;
     font-size: 1.8vw;
     font-weight: 500;
@@ -267,7 +284,7 @@ img {
     padding-left: 15%;
 }
 
-.nameIsland #name-body {
+.name-island-body {
     font-family: 'Poppins';
     font-size: 1.39vw;
     font-weight: 300;
@@ -277,106 +294,28 @@ img {
     margin-right: 7%;
 }
 
-.nameIsland-bubble1 {
-    width:1vw;
+.name-island-bubble1 {
+    width: 1vw;
     height: 1vw;
     background-color: #9CBCCC;
     border-radius: 50%;
-    margin-left:150%;
+    margin-left: 150%;
 }
 
-.nameIsland-bubble2 {
-    width:1vw;
+.name-island-bubble2 {
+    width: 1vw;
     height: 1vw;
     background-color: #9CBCCC;
     border-radius: 50%;
-    margin-left:148%;
+    margin-left: 148%;
 }
 
-.nameIsland-bubble3 {
-    width:1vw;
+.name-island-bubble3 {
+    width: 1vw;
     height: 1vw;
     background-color: #9CBCCC;
     border-radius: 50%;
-    margin-left:152%;
-}
-
-
-
-/* ControlIsland */
-
-
-/* FirstPage.js */
-
-
-.first-page {
-    text-align: end;
-    padding-top: 15%;
-}
-
-.first-page-logo {
-    position: absolute;
-    left: 21%;
-    top: 80px;
-    z-index: 50;
-}
-
-.first-page-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    text-align: center;
-    position: relative;
-    z-index: 100;
-    padding-top: 10%;
-}
-
-.first-page-container img:first-child {
-    padding-left: 8%;
-}
-
-.first-page-container-info {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    background-image: url('/images/islands/island1.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding: 5% 6% 7% 1%;
-    height: 22vh;
-    width: 18%;
-    margin-bottom: 3%;
-}
-
-.first-page-container-info p {
-    font-size: 28px;
-    font-weight: 600;
-}
-
-.first-page-container-info p:last-child {
-    cursor: pointer;
-    border-radius: 10px;
-    background-color: #A1D9F4;
-    padding: 3% 0;
-}
-
-.first-page img:last-child {
-    position: relative;
-    left: 55px;
-    margin-bottom: 5%;
-}
-
-.first-page-container-info p:last-child {
-    cursor: pointer;
-    border-radius: 10px;
-    background-color: #A1D9F4;
-    padding: 3% 0;
-}
-
-.first-page img:last-child {
-    position: relative;
-    left: 55px;
-    margin-bottom: 5%;
+    margin-left: 152%;
 }
 
 
@@ -421,6 +360,34 @@ img {
 }
 
 
+/* HomeControls.js */
+
+.home-controls {
+    background-image: url('/images/islands/island5.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-family: 'Barlow';
+    font-size: 30%;
+    font-weight: 300;
+    width: 95%;
+    margin: 0 23.5% 15%;
+    padding: 13% 0 19%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.home-controls p {
+    margin-top: -4%;
+    margin-left: -43%;
+    margin-bottom: 0;
+    font-size: 3vw;
+}
+
+.home-controls:hover {
+    opacity: 0.3;
+}
+
+
 /* Footer.js */
 
 .footer {
@@ -439,19 +406,13 @@ img {
 
 .footer-container-title{
     font-family: 'M PLUS 1p';
-    font-size: 4vw;
-    margin: 0;
+    font-size: 40px;
 }
 
 .footer-container-email {
     font-family: 'Barlow';
-    font-size: 3vw;
-    font-weight: 300;
-    margin: 0 0 2%;
-}
-
-.footer-container-icons {
-    display: flex;
+    font-size: 27px;
+    margin: 2% 0;
 }
 
 .footer-container-icons a {
@@ -462,14 +423,21 @@ img {
     margin: 0 50px;
 }
 
+.footer-container > a {
+    font-family: 'Barlow';
+    text-decoration: none;
+    color: #A9D09E;
+    background-color: #1A1717;
+    font-size: 22px;
+    border-radius: 10px;
+    padding: 1%;
+    margin-top: 1%;
+}
+
 .footer-text {
     font-family: 'Poppins';
-    font-size: 1.5vw;
+    font-size: 20px;
 }
 
-.footer-wie-club-button {
-    display:flex;
-    margin-top:-3%;
 
-}
 

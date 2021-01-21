@@ -10,7 +10,7 @@ export default function Navbar() {
                 <li>
                     <Scroll
                         activeClass="active"
-                        to="aboutIsland"
+                        to="about-island"
                         spy={true}
                         smooth={true}
                         offset={-100}
@@ -21,7 +21,7 @@ export default function Navbar() {
                 <li>
                     <Scroll
                         activeClass="active"
-                        to="robot"
+                        to="name-island"
                         spy={true}
                         smooth={true}
                         offset={-100}
@@ -43,7 +43,7 @@ export default function Navbar() {
                 <li>
                     <Scroll 
                         activeClass="active"
-                        to="controlIsland"
+                        to="home-controls"
                         spy={true}
                         smooth={true}
                         offset={-100}

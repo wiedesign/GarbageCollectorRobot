@@ -9,10 +9,9 @@ export default function FirstPage() {
                 <div className="first-page-container-info">
                     <p>Robot</p>
                     <p>Version #</p>
-                    <p>Get Started</p>
                 </div>
             </div>
-            <img src="/images/turtle.png" alt="" />
+            <img src="/images/turtle1.png" alt="" />
         </div>
     )
 }

@@ -7,23 +7,19 @@ export default function Footer() {
                 <p className="footer-container-title">Contact Us</p>
                 <p className="footer-container-email">email: wie@sfu.ca</p>
                 <div className="footer-container-icons">
-                    <a href="https://www.facebook.com/groups/sfuwie/" target="_blank" rel="noopener noreferrer" >
+                    <a href="https://www.facebook.com/wiesfu" target="_blank" rel="noopener noreferrer">
                         <img src="/images/footer/facebook.png" alt="" />
                     </a>
-                    <a href="https://www.linkedin.com/groups/8546476/" target="_blank" rel="noopener noreferrer" >
+                    <a href="https://www.linkedin.com/groups/8546476/" target="_blank" rel="noopener noreferrer">
                         <img src="/images/footer/linkedin.png" alt="" />
                     </a>
-                    <a href="https://www.instagram.com/wiesfu/" target="_blank" rel="noopener noreferrer" >
+                    <a href="https://www.instagram.com/wiesfu/" target="_blank" rel="noopener noreferrer">
                         <img src="/images/footer/instagram.png"alt="" />
                     </a>
                 </div>
-                <div className="footer-wie-club-button">
-                    <a href="https://www.instagram.com/wiesfu/" target="_blank" rel="noopener noreferrer" >
-                        <img src="/images/footer/website-button.png"alt="" />
-                    </a>
-                </div>
+                <a href="http://www.sfu.ca/clubs/wie.html" target="_blank" rel="noopener noreferrer">Visit WiE SFU club website</a>
             </div>
-            <p className="footer-text">webapp created by WiE Design Team</p>
+            <p className="footer-text">Webapp created by WiE Design Team</p>
         </div>
     )
 }
