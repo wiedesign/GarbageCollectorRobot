@@ -253,6 +253,12 @@ img {
     }
 }
 
+.model-view {
+    /* display: block; */
+    margin: 0 10% 0%;
+    width:560px;
+    height:315px;
+}
 
 /* NameIsland.js */
 
