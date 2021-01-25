@@ -11,7 +11,10 @@
 body {
     margin: 0;
     font-family: 'M PLUS 1p', sans-serif;
+    padding:0;
+    margin:0 auto;
 }
+
 
 p {
     margin: 0;
@@ -143,7 +146,7 @@ img {
 
 .first-page-container-info p:first-child {
     font-family: 'Montserrat';
-    font-size: 25px;
+    font-size:1.3vw;
     font-weight: bold;
 }
 
@@ -157,6 +160,109 @@ img {
     position: relative;
     right: 10%;
     margin-bottom: 5%;
+}
+
+.first-page-bubbles {
+    padding-left:10%;
+    margin-bottom:-20%;
+    
+}
+
+.first-page-bubbles-1{
+    width: 0.8vw;
+    height: 0.8vw;
+    border-radius:50%;
+    background-color: #9CBCCC; 
+    margin-left:15%;
+    margin-top:1%;
+    animation: pulse 3s infinite;
+}
+
+.first-page-bubbles-2{
+    
+    width: 1.2vw;
+    height: 1.2vw;
+    border-radius:50%;
+    background-color: #9CBCCC; 
+    margin-left:17%;
+    margin-top:0.5%;
+    animation: pulse 3s infinite;
+}
+
+.first-page-bubbles-3{
+    width: 1.1vw;
+    height: 1.1vw;
+    border-radius:50%;
+    background-color: #9CBCCC; 
+    margin-left:15%;
+    margin-top:0.5%;
+    animation: pulse 3s infinite;
+}
+
+.first-page-bubbles-4{
+    width: 1.3vw;
+    height: 1.3vw;
+    border-radius:50%;
+    background-color: #9CBCCC;
+    margin-left:20%;
+    margin-top:-0.9%; 
+    animation: pulse 3s infinite;
+}
+.first-page-bubbles-5{
+    
+    width: 1.2vw;
+    height: 1.2vw;
+    border-radius:50%;
+    background-color: #9CBCCC;
+    margin-left:18%;
+    margin-top:1.5%;
+    animation: pulse 3s infinite;
+}
+
+.first-page-bubbles-6{
+    
+    width: 0.8vw;
+    height: 0.8vw;
+    border-radius:50%;
+    background-color: #9CBCCC;  
+    margin-left:18%;
+    margin-top:1.9%;
+    animation: pulse 3s infinite;
+    
+}
+.first-page-bubbles-7{
+    width: 1vw;
+    height: 1vw;
+    border-radius:50%;
+    background-color: #9CBCCC; 
+    margin-top:3%;
+    margin-left:17%;
+    animation: pulse 3s infinite;
+    
+}
+
+.first-page-bubbles-8{
+    
+    width: 1vw;
+    height: 1vw;
+    border-radius:50%;
+    background-color: #9CBCCC; 
+    margin-left:18%;
+    margin-top:1.2%;
+    animation: pulse 3s infinite;
+    
+}
+
+.first-page-bubbles-9{
+    
+    width: 1vw;
+    height: 1vw;
+    border-radius:50%;
+    background-color: #9CBCCC;
+    margin-left:15%;
+    margin-top:1%; 
+    animation: pulse 3s infinite;
+  
 }
 
 
@@ -173,15 +279,16 @@ img {
 
 .about-island .about-island-title {
     font-family: 'Archivo', sans-serif;
-    font-size: 40px;
+    /* font-size: 40px; */
+    font-size:3.5vw;
     font-weight: 500;
 }
 
 .about-island .about-island-body {
     font-family: 'Poppins';
-    font-size: 19px;
+    /* font-size: 19px; */
+    font-size: 1.5vw;
     font-weight: 300;
-    line-height: 40px;
     padding: 2% 15% 0;
  }
 
@@ -253,6 +360,10 @@ img {
     }
 }
 
+.meet-robot-turtle{
+    margin-right: 114%
+}
+
 
 /* NameIsland.js */
 
@@ -261,8 +372,9 @@ img {
     background-size: contain;
     background-repeat: no-repeat;
     margin: 0 10% 0%;
-    padding: 4.5% 0 10%;
+    padding: 4.5% 0 15%;
     width: 50%;
+    position:relative;
  }
 
 .name-island-title {
@@ -295,27 +407,36 @@ img {
 }
 
 .name-island-bubble1 {
-    width: 1vw;
-    height: 1vw;
+    position:absolute;
+    left:132%;
+    top:45%;
+    height: 1.4vw;
+    width: 1.4vw;
     background-color: #9CBCCC;
     border-radius: 50%;
-    margin-left: 150%;
+    animation: pulse 4s infinite; 
 }
 
 .name-island-bubble2 {
-    width: 1vw;
-    height: 1vw;
+    position:absolute;
+    left:130%;
+    top:50%;
+    width: 1.4vw;
+    height: 1.34vw;
     background-color: #9CBCCC;
     border-radius: 50%;
-    margin-left: 148%;
+    animation: pulse 4s infinite;
 }
 
 .name-island-bubble3 {
+    position:absolute;
+    left:135%;
+    top:53%;
     width: 1vw;
     height: 1vw;
     background-color: #9CBCCC;
     border-radius: 50%;
-    margin-left: 152%;
+    animation: pulse 4s infinite;
 }
 
 
@@ -325,11 +446,52 @@ img {
     border: 5px solid black;
 }
 
+.time-submarine{
+    border: 5px solid black;
+}
+
+
+.timeline-submarine-bubbles-1 {
+    width: 1.2vw;
+    height: 1.2vw;
+    background-color: #9CBCCC;
+    border-radius: 50%;
+    animation: pop3 4s infinite;
+    margin-left:11%;
+    margin-top:5%;
+    margin-bottom:1%;
+    
+}
+
+.timeline-submarine-bubbles-2 {
+    width: 1vw;
+    height: 1vw;
+    background-color: #9CBCCC;
+    border-radius: 50%;
+    animation: pop2 4s infinite; 
+    margin-left:13%;
+    margin-bottom:2%;
+    
+}
+
+.timeline-submarine-bubbles-3 {
+    width: 1.3vw;
+    height: 1.3vw;
+    background-color: #9CBCCC;
+    border-radius: 50%;
+    animation: pop1 4s infinite;
+    margin-left:12%;
+    margin-bottom:-2%;
+    
+} 
+
+
 .timeline-submarine {
     background-image: url('/images/timeline/submarine3.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    position:relative;
 }
 
 .timeline-submarine-title {
@@ -359,6 +521,56 @@ img {
     padding: 0 12%;
 }
 
+@keyframes pop3 {
+    0% {
+        transform: scale(0);   
+    }
+    50%{
+        transform: scale(0);
+    }
+    75%{
+        transform: scale(1); 
+    }
+    76%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+    }
+}
+
+@keyframes pop2 {
+    0% {
+        transform: scale(0);   
+    }
+    25%{
+        transform:scale(0);
+    }
+    50% {
+        transform: scale(1);
+    }
+    51% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes pop1 {
+    0% {
+        transform: scale(0);   
+    }
+    25% {
+        transform: scale(1);
+    }
+    26% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 
 /* HomeControls.js */
 
@@ -367,20 +579,20 @@ img {
     background-size: contain;
     background-repeat: no-repeat;
     font-family: 'Barlow';
-    font-size: 30%;
     font-weight: 300;
-    width: 95%;
-    margin: 0 23.5% 15%;
+    margin-top:5%;
+    margin-left:25%;
     padding: 13% 0 19%;
-    text-align: center;
     cursor: pointer;
+    width:50%;
+    border: solid black;
 }
 
 .home-controls p {
-    margin-top: -4%;
-    margin-left: -43%;
-    margin-bottom: 0;
+    margin-top: -10%;
+    margin-left: 25%;
     font-size: 3vw;
+    text-align:left;
 }
 
 .home-controls:hover {
