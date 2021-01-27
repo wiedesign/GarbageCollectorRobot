@@ -361,7 +361,8 @@ img {
 }
 
 .meet-robot-turtle{
-    margin-right: 114%
+    margin-right: 0;
+    /* Still need to fix */
 }
 
 
