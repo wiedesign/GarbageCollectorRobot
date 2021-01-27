@@ -366,7 +366,8 @@ img {
 
 .meet-robot-turtle{
     margin-right: 0;
-    /* Still need to fix */
+    
+ }
 
 /* ModelView.js */
 
@@ -384,9 +385,7 @@ model-viewer {
     /*good ratio width to height is 4:5 */
     width: 240px;
     height: 300px;
-    border: solid red;
     --poster-color: transparent;
-    --border-style:20px solid red;
     outline: none;
 }
 
