@@ -293,7 +293,11 @@ img {
  }
 
 
-/* MeetOurRobot.js */
+/* MeetOurRobot.js */ 
+
+.meet-robot-turtle{
+    margin-right: 114%
+}
 
 .meet-robot {
     margin-left: 15%;
@@ -364,6 +368,25 @@ img {
     }
 }
 
+
+/* ModelView.js */
+
+model-viewer {
+    background-image: url('/images/islands/island3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    color: transparent;
+    padding: 5% 10% 7% 9%;
+    margin:0;
+    /*good ratio width to height is 4:5 */
+    width: 100%;
+    border: solid red;
+    --poster-color: transparent;
+    --border-style:20px solid red;
+    outline: none;
+}
+
 .model-view {
     /* display: block; */
     margin: 0 10% 0%;
@@ -378,9 +401,15 @@ img {
     width: 100%;
     /* border: 5px solid black; */
 }
+.meet-robot-turtle{
+    margin-right: 0;
+    /* Still need to fix */
+}
 
 
-/* NameIsland.js */
+
+/* NameIsland.js*/
+
 
 .name-island {
     background-image: url('/images/islands/island4.png');
