@@ -364,11 +364,9 @@ img {
     }
 }
 
-<<<<<<< HEAD
 .meet-robot-turtle{
     margin-right: 0;
     /* Still need to fix */
-=======
 
 /* ModelView.js */
 
@@ -390,7 +388,6 @@ model-viewer {
     --poster-color: transparent;
     --border-style:20px solid red;
     outline: none;
->>>>>>> 55e26cda5d02de4c40929eec2130f24cf18aafce
 }
 
 
