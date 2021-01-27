@@ -6,6 +6,7 @@ import MeetOurRobot from '../components/MeetOurRobot';
 import NameIsland from '../components/NameIsland';
 import Timeline from '../components/Timeline';
 import HomeControls from '../components/HomeControls';
+import ModelView from '../components/ModelView';
 
 export default function Home() {
     return (
@@ -13,7 +14,7 @@ export default function Home() {
             <FirstPage />
             <AboutIsland />
             <MeetOurRobot />
-            <img src="/images/islands/island3.png" alt="" />
+            <ModelView />
             <NameIsland />
             <Timeline />
             <HomeControls />
