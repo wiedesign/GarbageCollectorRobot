@@ -14,7 +14,7 @@ export default function Home() {
             <FirstPage />
             <AboutIsland />
             <MeetOurRobot />
-            <ModelView />
+            
             <NameIsland />
             <Timeline />
             <HomeControls />

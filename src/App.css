@@ -95,7 +95,6 @@ img {
 
 /* Home.js */
 
-
 .home {
     border: 60px solid #9AD6F3;
     background-color: #EAF6FC;
@@ -146,7 +145,8 @@ img {
 
 .first-page-container-info p:first-child {
     font-family: 'Montserrat';
-    font-size:1.3vw;
+    font-size: 25px;
+    font-size: 1.3vw;
     font-weight: bold;
 }
 
@@ -163,18 +163,18 @@ img {
 }
 
 .first-page-bubbles {
-    padding-left:10%;
-    margin-bottom:-20%;
+    padding-left: 10%;
+    margin-bottom: -20%;
     
 }
 
 .first-page-bubbles-1{
     width: 0.8vw;
     height: 0.8vw;
-    border-radius:50%;
+    border-radius: 50%;
     background-color: #9CBCCC; 
-    margin-left:15%;
-    margin-top:1%;
+    margin-left: 15%;
+    margin-top: 1%;
     animation: pulse 3s infinite;
 }
 
@@ -182,40 +182,40 @@ img {
     
     width: 1.2vw;
     height: 1.2vw;
-    border-radius:50%;
+    border-radius: 50%;
     background-color: #9CBCCC; 
-    margin-left:17%;
-    margin-top:0.5%;
+    margin-left: 17%;
+    margin-top: 0.5%;
     animation: pulse 3s infinite;
 }
 
 .first-page-bubbles-3{
     width: 1.1vw;
     height: 1.1vw;
-    border-radius:50%;
+    border-radius: 50%;
     background-color: #9CBCCC; 
-    margin-left:15%;
-    margin-top:0.5%;
+    margin-left: 15%;
+    margin-top: 0.5%;
     animation: pulse 3s infinite;
 }
 
 .first-page-bubbles-4{
     width: 1.3vw;
     height: 1.3vw;
-    border-radius:50%;
+    border-radius: 50%;
     background-color: #9CBCCC;
-    margin-left:20%;
-    margin-top:-0.9%; 
+    margin-left: 20%;
+    margin-top: -0.9%; 
     animation: pulse 3s infinite;
 }
 .first-page-bubbles-5{
     
     width: 1.2vw;
     height: 1.2vw;
-    border-radius:50%;
+    border-radius: 50%;
     background-color: #9CBCCC;
-    margin-left:18%;
-    margin-top:1.5%;
+    margin-left: 18%;
+    margin-top: 1.5%;
     animation: pulse 3s infinite;
 }
 
@@ -223,20 +223,20 @@ img {
     
     width: 0.8vw;
     height: 0.8vw;
-    border-radius:50%;
+    border-radius: 50%;
     background-color: #9CBCCC;  
-    margin-left:18%;
-    margin-top:1.9%;
+    margin-left: 18%;
+    margin-top: 1.9%;
     animation: pulse 3s infinite;
     
 }
 .first-page-bubbles-7{
     width: 1vw;
     height: 1vw;
-    border-radius:50%;
+    border-radius: 50%;
     background-color: #9CBCCC; 
-    margin-top:3%;
-    margin-left:17%;
+    margin-top: 3%;
+    margin-left: 17%;
     animation: pulse 3s infinite;
     
 }
@@ -245,10 +245,10 @@ img {
     
     width: 1vw;
     height: 1vw;
-    border-radius:50%;
+    border-radius: 50%;
     background-color: #9CBCCC; 
-    margin-left:18%;
-    margin-top:1.2%;
+    margin-left: 18%;
+    margin-top: 1.2%;
     animation: pulse 3s infinite;
     
 }
@@ -257,10 +257,10 @@ img {
     
     width: 1vw;
     height: 1vw;
-    border-radius:50%;
+    border-radius: 50%;
     background-color: #9CBCCC;
-    margin-left:15%;
-    margin-top:1%; 
+    margin-left: 15%;
+    margin-top: 1%; 
     animation: pulse 3s infinite;
   
 }
@@ -280,7 +280,7 @@ img {
 .about-island .about-island-title {
     font-family: 'Archivo', sans-serif;
     /* font-size: 40px; */
-    font-size:3.5vw;
+    font-size: 3.5vw;
     font-weight: 500;
 }
 
@@ -303,6 +303,10 @@ img {
     margin-left: 15%;
     margin-bottom: 12%
 } 
+
+.meet-robot-turtle{
+    margin-right: 114%
+}
 
 .meet-robot-top {
     margin-left: -30%;
@@ -387,6 +391,14 @@ model-viewer {
     height: 300px;
     --poster-color: transparent;
     outline: none;
+}
+
+
+.model-view-robot {
+    background-color: #455A64 !important;
+    background-color: yellow !important;
+    width: 100%;
+    /* border: 5px solid black; */
 }
 
 
@@ -479,16 +491,15 @@ model-viewer {
     border: 5px solid black;
 }
 
-
 .timeline-submarine-bubbles-1 {
     width: 1.2vw;
     height: 1.2vw;
     background-color: #9CBCCC;
     border-radius: 50%;
     animation: pop3 4s infinite;
-    margin-left:11%;
-    margin-top:5%;
-    margin-bottom:1%;
+    margin-left: 11%;
+    margin-top: 5%;
+    margin-bottom: 1%;
     
 }
 
@@ -498,8 +509,8 @@ model-viewer {
     background-color: #9CBCCC;
     border-radius: 50%;
     animation: pop2 4s infinite; 
-    margin-left:13%;
-    margin-bottom:2%;
+    margin-left: 13%;
+    margin-bottom: 2%;
     
 }
 
@@ -509,11 +520,10 @@ model-viewer {
     background-color: #9CBCCC;
     border-radius: 50%;
     animation: pop1 4s infinite;
-    margin-left:12%;
-    margin-bottom:-2%;
+    margin-left: 12%;
+    margin-bottom: -2%;
     
 } 
-
 
 .timeline-submarine {
     background-image: url('/images/timeline/submarine3.png');
@@ -609,11 +619,11 @@ model-viewer {
     background-repeat: no-repeat;
     font-family: 'Barlow';
     font-weight: 300;
-    margin-top:5%;
-    margin-left:25%;
+    margin-top: 5%;
+    margin-left: 25%;
     padding: 13% 0 19%;
     cursor: pointer;
-    width:50%;
+    width: 50%;
     border: solid black;
 }
 
@@ -621,7 +631,7 @@ model-viewer {
     margin-top: -10%;
     margin-left: 25%;
     font-size: 3vw;
-    text-align:left;
+    text-align: left;
 }
 
 .home-controls:hover {
@@ -679,6 +689,3 @@ model-viewer {
     font-family: 'Poppins';
     font-size: 20px;
 }
-
-
-

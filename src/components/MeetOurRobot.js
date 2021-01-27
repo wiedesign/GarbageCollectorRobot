@@ -15,6 +15,15 @@ export default function MeetOurRobot() {
             <div className="meet-robot-bubble2" />
             <div className="meet-robot-bubble3" />
         </div>
+        <div className="model-view">
+            <model-viewer
+                src="/3d-model/SN_RobotAssembly.glb"
+                alt="A 3D model of a robot"
+                auto-rotate=""
+                camera-controls=""
+                className="model-view-robot"
+            />
+        </div>
     </div>
     )
 }
