@@ -15,6 +15,7 @@ export default function MeetOurRobot() {
             <div className="meet-robot-bubble2" />
             <div className="meet-robot-bubble3" />
         </div>
+<<<<<<< HEAD
         <div className="model-view">
             <model-viewer
                 src="/3d-model/SN_RobotAssembly.glb"
@@ -24,6 +25,8 @@ export default function MeetOurRobot() {
                 className="model-view-robot"
             />
         </div>
+=======
+>>>>>>> origin/dexter-changes
     </div>
     )
 }
