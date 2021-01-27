@@ -15,6 +15,7 @@ export default function NameIsland() {
                 <div className = "name-island-bubble2" />
                 <div className = "name-island-bubble3" />
             </div>
-        </div>
+            </div>
+        
         )
 }

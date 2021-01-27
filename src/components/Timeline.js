@@ -6,6 +6,11 @@ export default function Timeline() {
 
     return (
         <div className ="timeline">
+            <div className="timeline-submarine-bubbles">
+                <div className="timeline-submarine-bubbles-1" />
+                <div className="timeline-submarine-bubbles-2" />
+                <div className="timeline-submarine-bubbles-3" />
+            </div>
             <div className="timeline-submarine">
                 <p className="timeline-submarine-title">Project Stages</p>
                 <div className="timeline-submarine-windows">

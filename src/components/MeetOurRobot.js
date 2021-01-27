@@ -17,12 +17,11 @@ export default function MeetOurRobot() {
         </div>
         <div className="model-view">
             <model-viewer
-                src="/3d-model/RobotExpressive.glb"
+                src="/3d-model/SN_RobotAssembly.glb"
                 alt="A 3D model of a robot"
                 auto-rotate=""
                 camera-controls=""
                 className="model-view-robot"
-                width="100%"
             />
         </div>
     </div>
