@@ -138,21 +138,24 @@ img {
     background-size: contain;
     background-repeat: no-repeat;
     padding: 3% 1% 0 0;
-    height: 24vh;
+    height: 15vh;
     width: 13%;
     margin-right: 17%;
+    margin-bottom: 10%;
 }
 
 .first-page-container-info p:first-child {
     font-family: 'Montserrat';
-    font-size: 25px;
-    font-size: 1.3vw;
+    /* font-size: 25px; */
+    font-size: 1.85vw;
     font-weight: bold;
+    padding-top: 5%;
 }
 
 .first-page-container-info p:last-child {
     font-family: 'Montserrat';
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: 1.2vw;
     font-weight: 600;
 }
 
@@ -165,10 +168,9 @@ img {
 .first-page-bubbles {
     padding-left: 10%;
     margin-bottom: -20%;
-    
 }
 
-.first-page-bubbles-1{
+.first-page-bubbles-1 {
     width: 0.8vw;
     height: 0.8vw;
     border-radius: 50%;
@@ -178,7 +180,7 @@ img {
     animation: pulse 3s infinite;
 }
 
-.first-page-bubbles-2{
+.first-page-bubbles-2 {
     
     width: 1.2vw;
     height: 1.2vw;
@@ -189,7 +191,7 @@ img {
     animation: pulse 3s infinite;
 }
 
-.first-page-bubbles-3{
+.first-page-bubbles-3 {
     width: 1.1vw;
     height: 1.1vw;
     border-radius: 50%;
@@ -199,7 +201,7 @@ img {
     animation: pulse 3s infinite;
 }
 
-.first-page-bubbles-4{
+.first-page-bubbles-4 {
     width: 1.3vw;
     height: 1.3vw;
     border-radius: 50%;
@@ -208,7 +210,8 @@ img {
     margin-top: -0.9%; 
     animation: pulse 3s infinite;
 }
-.first-page-bubbles-5{
+
+.first-page-bubbles-5 {
     
     width: 1.2vw;
     height: 1.2vw;
@@ -219,7 +222,7 @@ img {
     animation: pulse 3s infinite;
 }
 
-.first-page-bubbles-6{
+.first-page-bubbles-6 {
     
     width: 0.8vw;
     height: 0.8vw;
@@ -230,7 +233,8 @@ img {
     animation: pulse 3s infinite;
     
 }
-.first-page-bubbles-7{
+
+.first-page-bubbles-7 {
     width: 1vw;
     height: 1vw;
     border-radius: 50%;
@@ -241,7 +245,7 @@ img {
     
 }
 
-.first-page-bubbles-8{
+.first-page-bubbles-8 {
     
     width: 1vw;
     height: 1vw;
@@ -253,7 +257,7 @@ img {
     
 }
 
-.first-page-bubbles-9{
+.first-page-bubbles-9 {
     
     width: 1vw;
     height: 1vw;
@@ -377,13 +381,13 @@ model-viewer {
     background-repeat: no-repeat;
     background-color: transparent;
     color: transparent;
-    padding: 5% 10% 7% 9%;
+    /* padding: 5% 10% 7% 9%; */
     margin:0;
     /*good ratio width to height is 4:5 */
     width: 100%;
     border: solid red;
     --poster-color: transparent;
-    --border-style:20px solid red;
+    --border-style: 20px solid red;
     outline: none;
 }
 
@@ -487,11 +491,7 @@ model-viewer {
 /* Timeline.js */
 
 .timeline {
-    border: 5px solid black;
-}
-
-.time-submarine{
-    border: 5px solid black;
+    margin-bottom: 5%;
 }
 
 .timeline-submarine-bubbles-1 {
@@ -533,34 +533,49 @@ model-viewer {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    position:relative;
+    margin: 0 3%;
 }
 
 .timeline-submarine-title {
     font-family: 'Barlow';
     font-size: 43px;
+    text-align: right;
+    margin-right: 8%;
 }
 
 .timeline-submarine-windows {
     display: flex;
     justify-content: space-between;
-    padding: 9% 12% 10%;
+    padding: 10% 12% 9%;
 }
 
-.timeline-submarine-windows p {
+.timeline-submarine-windows div {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.timeline-submarine-windows p:first-child {
     background-color: #CDFCFF;
     border-radius: 50%;
+    margin-bottom: 10px;
     padding: 0.75% 2.5%;
+    width: 55px;
+    height: 55px;
     font-size: 35px;
     font-weight: 300;
     box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
     cursor: pointer;
 }
 
-.timeline-stage {
+.timeline-submarine-windows p:first-child:hover {
+    background-color: #F6E2BC;
+}
+
+.timeline-submarine-text {
     display: flex;
     justify-content: space-between;
-    padding: 0 12%;
+    padding: 9% 12% 10%;
 }
 
 @keyframes pop3 {
@@ -614,6 +629,64 @@ model-viewer {
     }
 }
 
+
+/* ProjectProgress.js */
+
+.project-progress {
+    padding: 0 5%;
+    font-size: 18px;
+    text-align: left;
+}
+
+.project-progress p {
+    background-size: fit;
+    background-repeat: no-repeat;
+    padding: 1% 4%;
+    margin-bottom: 2%;
+}
+
+.project-progress p:nth-child(3),
+.project-progress p:nth-child(4),
+.project-progress p:nth-child(6) {
+    padding: 2% 4%;
+}
+
+.project-progress-title {
+    font-family: 'Barlow';
+    font-weight: bold;
+    font-size: 43px;
+    padding: 1% 2% !important; 
+
+}
+
+.project-progress-1 {
+    background-image: url('/images/progress/research.png');
+}
+
+.project-progress-2 {
+    background-image: url('/images/progress/design.png');
+}
+
+.project-progress-3 {
+    background-image: url('/images/progress/communication.png');
+}
+
+.project-progress-4 {
+    background-image: url('/images/progress/robot-mobility.png');
+}
+
+.project-progress-5 {
+    background-image: url('/images/progress/body-trailer.png');
+}
+
+.project-progress-6 {
+    background-image: url('/images/progress/robot-links.png');
+}
+
+.project-progress-7 {
+    background-image: url('/images/progress/robot-head.png');
+}
+
 /* HomeControls.js */
 
 .home-controls {
@@ -627,7 +700,6 @@ model-viewer {
     padding: 13% 0 19%;
     cursor: pointer;
     width: 50%;
-    border: solid black;
 }
 
 .home-controls p {
