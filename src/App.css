@@ -368,13 +368,10 @@ img {
     }
 }
 
-<<<<<<< HEAD
 .meet-robot-turtle{
     margin-right: 0;
     
  }
-=======
->>>>>>> origin/dexter-changes
 
 /* ModelView.js */
 
@@ -387,26 +384,10 @@ model-viewer {
     padding: 5% 10% 7% 9%;
     margin:0;
     /*good ratio width to height is 4:5 */
-<<<<<<< HEAD
-    width: 240px;
-    height: 300px;
-=======
     width: 100%;
     border: solid red;
->>>>>>> origin/dexter-changes
     --poster-color: transparent;
     outline: none;
-<<<<<<< HEAD
-}
-
-
-.model-view-robot {
-    background-color: #455A64 !important;
-    background-color: yellow !important;
-    width: 100%;
-    /* border: 5px solid black; */
-=======
->>>>>>> origin/dexter-changes
 }
 
 .model-view {
