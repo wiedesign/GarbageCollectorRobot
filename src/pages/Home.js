@@ -9,13 +9,13 @@ import Timeline from '../components/Timeline';
 import ProjectProgress from '../components/ProjectProgress';
 import HomeControls from '../components/HomeControls';
 
+
 export default function Home() {
     return (
         <div className="home">
             <FirstPage />
             <AboutIsland />
             <MeetOurRobot />
-            
             <NameIsland />
             <Timeline />
             <ProjectProgress />

@@ -126,9 +126,18 @@ img {
     margin-top: 12%;
 }
 
-.first-page-container img:first-child {
+.first-page-container-image {
     margin-left: 19%;
     margin-top: 7%;
+    background-image: url("/images/blue-robot.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:20%;
+    padding-top:20%;
+}
+
+.first-page-container-image:hover {
+    background-image: url("/images/blue-robot-arms-up.png");
 }
 
 .first-page-container-info {
@@ -145,7 +154,7 @@ img {
 }
 
 .first-page-container-info p:first-child {
-    font-family: 'Montserrat';
+    font-family: 'Poppins';
     /* font-size: 25px; */
     font-size: 1.85vw;
     font-weight: bold;
@@ -153,7 +162,7 @@ img {
 }
 
 .first-page-container-info p:last-child {
-    font-family: 'Montserrat';
+    font-family: 'Poppins';
     /* font-size: 18px; */
     font-size: 1.2vw;
     font-weight: 600;
@@ -212,7 +221,6 @@ img {
 }
 
 .first-page-bubbles-5 {
-    
     width: 1.2vw;
     height: 1.2vw;
     border-radius: 50%;
@@ -299,17 +307,8 @@ img {
 
 /* MeetOurRobot.js */ 
 
-.meet-robot-turtle{
-    margin-right: 114%
-}
-
-.meet-robot {
-    margin-left: 15%;
-    margin-bottom: 12%
-} 
-
-.meet-robot-turtle{
-    margin-right: 114%
+.meet-robot-turtle {
+    margin-right: 60%;
 }
 
 .meet-robot-top {
@@ -372,47 +371,22 @@ img {
     }
 }
 
-.meet-robot-turtle{
-    margin-right: 0;
-    
- }
-
-/* ModelView.js */
+.model-view {
+    background-image: url('/images/islands/island3.png');
+    background-repeat: no-repeat;
+    padding: 20% 0% 10% 10%;
+    margin: -30% 0% 0% 50%;
+}
 
 model-viewer {
-    background-image: url('/images/islands/island3.png');
-    background-size: contain;
-    background-repeat: no-repeat;
+    width:300px;
+    height:400px;
     background-color: transparent;
+    padding-top:10%;
+    margin-left:0%;
     color: transparent;
-    /* padding: 5% 10% 7% 9%; */
-    margin:0;
-    /*good ratio width to height is 4:5 */
-    width: 100%;
-    border: solid red;
-    --poster-color: transparent;
-    outline: none;
+    margin-top: -45%;
 }
-
-.model-view {
-    /* display: block; */
-    margin: 0 10% 0%;
-    /* width: 560px;
-    height: 315px; */
-    border: 5px solid black;
-}
-
-.model-view-robot {
-    background-color: #455A64 !important;
-    background-color: yellow !important;
-    width: 100%;
-    /* border: 5px solid black; */
-}
-.meet-robot-turtle{
-    margin-right: 0;
-    /* Still need to fix */
-}
-
 
 
 /* NameIsland.js*/
@@ -767,3 +741,4 @@ model-viewer {
     font-family: 'Poppins';
     font-size: 20px;
 }
+
