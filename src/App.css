@@ -126,9 +126,18 @@ img {
     margin-top: 12%;
 }
 
-.first-page-container img:first-child {
+.first-page-container-image {
     margin-left: 19%;
     margin-top: 7%;
+    background-image: url("/images/blue-robot.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:20%;
+    padding-top:20%;
+}
+
+.first-page-container-image:hover {
+    background-image: url("/images/blue-robot-arms-up.png");
 }
 
 .first-page-container-info {
@@ -145,7 +154,7 @@ img {
 }
 
 .first-page-container-info p:first-child {
-    font-family: 'Montserrat';
+    font-family: 'Poppins';
     /* font-size: 25px; */
     font-size: 1.85vw;
     font-weight: bold;
@@ -153,7 +162,7 @@ img {
 }
 
 .first-page-container-info p:last-child {
-    font-family: 'Montserrat';
+    font-family: 'Poppins';
     /* font-size: 18px; */
     font-size: 1.2vw;
     font-weight: 600;
@@ -212,7 +221,6 @@ img {
 }
 
 .first-page-bubbles-5 {
-    
     width: 1.2vw;
     height: 1.2vw;
     border-radius: 50%;
@@ -366,12 +374,13 @@ img {
 .model-view {
     background-image: url('/images/islands/island3.png');
     background-repeat: no-repeat;
-    padding: 31% 0% 20% 0%;
+    padding: 20% 0% 10% 10%;
     margin: -30% 0% 0% 50%;
 }
 
 model-viewer {
-    width:90%;
+    width:300px;
+    height:400px;
     background-color: transparent;
     padding-top:10%;
     margin-left:0%;
@@ -732,3 +741,4 @@ model-viewer {
     font-family: 'Poppins';
     font-size: 20px;
 }
+

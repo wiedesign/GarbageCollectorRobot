@@ -16,7 +16,7 @@ export default function FirstPage() {
                 </div>
             <img src="/images/logo.png" alt="" className="first-page-logo" />
             <div className="first-page-container">
-                <img src="/images/blue-robot.png" alt="" />
+                <div className="first-page-container-image" />
                 <div className="first-page-container-info">
                     <p>Robot</p>
                     <p>Version #</p>
