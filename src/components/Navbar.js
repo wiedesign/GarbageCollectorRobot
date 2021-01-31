@@ -13,7 +13,7 @@ export default function Navbar() {
                         to="about-island"
                         spy={true}
                         smooth={true}
-                        offset={-100}
+                        offset={-200}
                         duration={500}>
                         About
                     </Scroll>
@@ -21,7 +21,7 @@ export default function Navbar() {
                 <li>
                     <Scroll
                         activeClass="active"
-                        to="name-island"
+                        to="meet-robot"
                         spy={true}
                         smooth={true}
                         offset={-100}
@@ -46,7 +46,7 @@ export default function Navbar() {
                         to="home-controls"
                         spy={true}
                         smooth={true}
-                        offset={-100}
+                        offset={-190}
                         duration={500}> 
                         Controls
                     </Scroll>
@@ -57,7 +57,7 @@ export default function Navbar() {
                         to="footer"
                         spy={true}
                         smooth={true}
-                        offset={-100}
+                        offset={0}
                         duration={500}> 
                         Contact Us
                     </Scroll>

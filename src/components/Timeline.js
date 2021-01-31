@@ -1,8 +1,8 @@
 import React from 'react';
 
-export default function Timeline() {
- 
+import ProjectProgress from '../components/ProjectProgress';
 
+export default function Timeline() {
     return (
         <div className ="timeline">
             <div className="timeline-bubbles bubbles-1" />
@@ -41,6 +41,7 @@ export default function Timeline() {
                     </div>
                 </div>
             </div>
+            <ProjectProgress />
         </div>
     )
 }
