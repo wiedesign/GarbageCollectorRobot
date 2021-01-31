@@ -15,7 +15,6 @@ body {
     margin:0 auto;
 }
 
-
 p {
     margin: 0;
 }
@@ -23,6 +22,7 @@ p {
 img {
     max-width: 100%;
 }
+
 
 /* Controls.js */
 
@@ -87,7 +87,7 @@ img {
     font-family: 'Barlow';
     font-size: 36px;
     color: black;
-    padding: 14px 16px;
+    padding: 5% 30px;
     text-decoration: none;
     cursor: pointer;
 }
@@ -109,6 +109,71 @@ img {
     padding-top: 15%;
 }
 
+.first-page-bubbles,
+.meet-robot-bubble,
+.name-island-bubbles {
+    background-color: #9CBCCC;
+    border-radius: 50%;
+    animation: pulse 5s infinite;
+    margin-top: 1%;
+}
+
+.first-page-bubbles.bubbles-1 {
+    width: 0.8vw;
+    height: 0.8vw;
+    margin-left: 15%;
+}
+
+.first-page-bubbles.bubbles-2 {
+    width: 1.2vw;
+    height: 1.2vw;
+    margin-left: 17%;
+}
+
+.first-page-bubbles.bubbles-3 {
+    width: 1.1vw;
+    height: 1.1vw;
+    margin-left: 15%;
+}
+
+.first-page-bubbles.bubbles-4 {
+    width: 1.5vw;
+    height: 1.5vw;
+    margin-left: 22%;
+}
+
+.first-page-bubbles.bubbles-5 {
+    width: 1.5vw;
+    height: 1.5vw;
+    margin-left: 19%;
+}
+
+.first-page-bubbles.bubbles-6 {
+    width: 0.8vw;
+    height: 0.8vw;
+    margin-left: 20%;
+    margin-top: 2%;
+}
+
+.first-page-bubbles.bubbles-7 {
+    width: 1.3vw;
+    height: 1.3vw;
+    margin-left: 17%;
+    margin-top: 3%;
+}
+
+.first-page-bubbles.bubbles-8 {
+    width: 1.3vw;
+    height: 1.3vw;
+    margin-left: 19%;
+}
+
+.first-page-bubbles.bubbles-9 {
+    width: 0.8vw;
+    height: 0.8vw;
+    margin-left: 18%;
+}
+
 .first-page-logo {
     position: absolute;
     left: 25%;
@@ -123,17 +188,17 @@ img {
     text-align: center;
     position: relative;
     z-index: 100;
-    margin-top: 12%;
+    top: -16vh;
 }
 
 .first-page-container-image {
-    margin-left: 19%;
+    margin-left: 18%;
     margin-top: 7%;
     background-image: url("/images/blue-robot.png");
     background-size: contain;
     background-repeat: no-repeat;
-    width:20%;
-    padding-top:20%;
+    width: 20%;
+    padding-top: 20%;
 }
 
 .first-page-container-image:hover {
@@ -171,79 +236,7 @@ img {
 .first-page img:last-child {
     position: relative;
     right: 10%;
-    margin-bottom: 5%;
-}
-
-.first-page-bubbles,
-.meet-robot-bubble,
-.name-island-bubbles {
-    background-color: #9CBCCC;
-    border-radius: 50%;
-    animation: pulse 5s infinite;
-    margin-top: 1%;
-}
-
-.first-page-bubbles.bubbles-1 {
-    width: 0.8vw;
-    height: 0.8vw;
-    margin-left: 15%;
-    margin-top: 1%;
-}
-
-.first-page-bubbles.bubbles-2 {
-    width: 1.2vw;
-    height: 1.2vw;
-    margin-left: 17%;
-    margin-top: 0.5%;
-}
-
-.first-page-bubbles.bubbles-3 {
-    width: 1.1vw;
-    height: 1.1vw;
-    margin-left: 15%;
-    margin-top: 0.5%;
-}
-
-.first-page-bubbles.bubbles-4 {
-    width: 1.3vw;
-    height: 1.3vw;
-    margin-left: 20%;
-    margin-top: -0.9%; 
-}
-
-.first-page-bubbles.bubbles-5 {
-    width: 1.2vw;
-    height: 1.2vw;
-    margin-left: 18%;
-    margin-top: 1.5%;
-}
-
-.first-page-bubbles.bubbles-6 {
-    width: 0.8vw;
-    height: 0.8vw;
-    margin-left: 18%;
-    margin-top: 1.9%;
-}
-
-.first-page-bubbles.bubbles-7 {
-    width: 1vw;
-    height: 1vw;
-    margin-top: 3%;
-    margin-left: 17%;
-}
-
-.first-page-bubbles.bubbles-8 {
-    width: 1vw;
-    height: 1vw;
-    margin-left: 18%;
-    margin-top: 1.2%; 
-}
-
-.first-page-bubbles.bubbles-9 {
-    width: 1vw;
-    height: 1vw;
-    margin-left: 15%;
-    margin-top: 1%; 
+    top: -16vh;
 }
 
 
@@ -256,7 +249,7 @@ img {
     background-position: right;
     padding: 5% 0 7%;
     margin-right: 4%;
-    margin-top: 15%;
+    margin-top: 5%;
 }
 
 .about-island .about-island-title {
@@ -286,9 +279,9 @@ img {
     margin-bottom: 2%;
 }
 
-.meet-robot p {
+.meet-robot > p {
     font-family:'Barlow';
-    font-size: 3vw;
+    font-size: 2.5vw;
     text-align: center;
     padding-bottom: 0%;
     font-weight: 600;
@@ -355,11 +348,11 @@ img {
 }
 
 model-viewer {
-    width:300px;
-    height:400px;
+    width: 300px;
+    height: 400px;
     background-color: transparent;
-    padding-top:10%;
-    margin-left:0%;
+    padding-top: 10%;
+    margin-left: 0%;
     color: transparent;
     margin-top: -45%;
 }
@@ -374,35 +367,30 @@ model-viewer {
     background-size: contain;
     background-repeat: no-repeat;
     margin: 0 0 0 5%;
-    padding: 5% 8% 5% 0;
+    padding: 5% 8% 7% 3%;
     width: 45%;
  }
 
 .name-island-title {
     font-family: 'Archivo', sans-serif;
-    font-size: 35px;
-    /* font-size: 2.9vw; */
+    font-size: 2.9vw;
     font-weight: 500;
-    padding: 1.5% 0 1% 7%;
+    padding: 1.5% 0 1% 10%;
 }
 
 .name-island-subtitle {
     font-family: 'Archivo', sans-serif;
-    font-size: 25px;
-    /* font-size: 1.8vw; */
+    font-size: 1.8vw;
     font-weight: 500;
-    padding: 1.5% 0 1% 15%;
+    padding: 1.5% 0 1% 20%;
 }
 
 .name-island-body {
     font-family: 'Poppins';
-    font-size: 15px;
-    /* font-size: 1.39vw; */
+    font-size: 1.1vw;
     font-weight: 300;
-    padding-top: 1.5%;
-    padding-bottom: 1%;
-    margin-left: 11%;
-    margin-right: 7%;
+    padding: 1.5% 1% 1%;
+    margin: 0 5% 0 16%;
 }
 
 .name-island-bubbles.bubble-1 {
@@ -433,6 +421,7 @@ model-viewer {
 /* Timeline.js */
 
 .timeline {
+    margin-top: 10%;
     margin-bottom: 5%;
 }
 
@@ -507,7 +496,7 @@ model-viewer {
 }
 
 .timeline-submarine-windows p:first-child:hover {
-    background-color: #F6E2BC;
+    background-color: #9CBCCC;
 }
 
 .timeline-submarine-text {
@@ -572,15 +561,17 @@ model-viewer {
 
 .project-progress {
     padding: 0 5%;
-    font-size: 18px;
+    font-size: 1.25vw;
     text-align: left;
+    margin-top: 5%;
 }
 
 .project-progress p {
-    background-size: fit;
+    background-size: contain;
     background-repeat: no-repeat;
     padding: 1% 4%;
     margin-bottom: 2%;
+    width: 90%;
 }
 
 .project-progress p:nth-child(3),
@@ -594,7 +585,6 @@ model-viewer {
     font-weight: bold;
     font-size: 43px;
     padding: 1% 2% !important; 
-
 }
 
 .project-progress-1 {
@@ -625,6 +615,7 @@ model-viewer {
     background-image: url('/images/progress/robot-head.png');
 }
 
+
 /* HomeControls.js */
 
 .home-controls {
@@ -633,8 +624,7 @@ model-viewer {
     background-repeat: no-repeat;
     font-family: 'Barlow';
     font-weight: 300;
-    margin-top: 5%;
-    margin-left: 25%;
+    margin: 15% 0 10% 25%;
     padding: 13% 0 19%;
     cursor: pointer;
     width: 50%;
@@ -702,4 +692,3 @@ model-viewer {
     font-family: 'Poppins';
     font-size: 20px;
 }
-
