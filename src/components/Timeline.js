@@ -9,7 +9,7 @@ export default function Timeline() {
             <div className="timeline-bubbles bubbles-2" />
             <div className="timeline-bubbles bubbles-3" />
             <div className="timeline-submarine">
-                <p className="timeline-submarine-title">Project Stages</p>
+                <p className="timeline-submarine-title"><b>Project Stages</b></p>
                 <div className="timeline-submarine-windows">
                     <div>
                         <p>1</p>
