@@ -1,7 +1,5 @@
 import React from 'react'
-import { Link as Scroll} from 'react-scroll';
-// import { Link} from 'react-router-dom';
-
+import { Link as Scroll } from 'react-scroll';
 
 export default function Navbar() {
     return (
