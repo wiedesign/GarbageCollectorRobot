@@ -466,7 +466,7 @@ model-viewer {
     .meet-robot {
         margin-top: 10%;
     }
-    
+
     .meet-robot-turtle {
         margin-right: 60%;
         width: 10%;
@@ -779,7 +779,7 @@ model-viewer {
 }
 
 .project-progress p {
-    background-size: fit;
+    background-size: contain;
     background-repeat: no-repeat;
     padding: 1% 4%;
     margin-bottom: 2%;
