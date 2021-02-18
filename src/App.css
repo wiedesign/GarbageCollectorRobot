@@ -92,6 +92,13 @@ img {
     cursor: pointer;
 }
 
+@media (max-width: 768px) {
+    .navbar li a {
+    font-size: 20px;
+    padding: 10px 16px;
+    }
+}
+
 
 /* Home.js */
 
@@ -99,6 +106,12 @@ img {
     border: 60px solid #9AD6F3;
     background-color: #EAF6FC;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .home{
+    border: 20px solid #9AD6F3;
+    }
 }
 
 
@@ -277,6 +290,28 @@ img {
   
 }
 
+@media (max-width: 768px) {
+    
+    .first-page-logo {
+        left: 27%;
+        width:45%;
+        top: 110px;
+    }
+    
+    .first-page-container-image {
+        width: 20%;
+        padding-top: 47%;
+    }
+
+    .first-page img:last-child {
+        position: relative;
+        right: 10%;
+        margin-top: -38%;
+        margin-bottom: 24%;
+        width: 10%;
+    }
+}
+
 
 /* AboutIsland.js */
 
@@ -304,6 +339,26 @@ img {
     padding: 2% 15% 0;
  }
 
+ @media (max-width: 768px) {
+    .about-island {
+        padding: 5% 0 9%;
+        margin-top: -12%;
+    }
+    
+    .about-island .about-island-title {
+        font-size: 30px;
+    }
+    
+    .about-island .about-island-body {
+        font-family: 'Poppins';
+        /* font-size: 19px; */
+        font-size: 10px;
+        line-height: 20px;
+        font-weight: 300;
+        padding: 2% 15% 0;
+     }
+ }
+
 
 /* MeetOurRobot.js */ 
 
@@ -315,9 +370,27 @@ img {
     margin-left: -30%;
 }
 
+.meet-robot-top .meet-robot-bubble1{ 
+    height: 2vw;
+    width: 2vw;
+    background-color: #9CBCCC;
+    border-radius: 50%;
+    animation: pulse 5s infinite;
+    margin-left: 35%;
+}
+
 .meet-robot-top .meet-robot-bubble2 {
-    margin-left: 27%;
+    margin-left: 32%;
     margin-bottom: 1%;
+}
+
+.meet-robot-top .meet-robot-bubble3 {
+    height: 1vw;
+    width: 1vw;
+    background-color: #9CBCCC;
+    border-radius: 50%;
+    animation: pulse 5s infinite;
+    margin-left: 35%; 
 }
 
 .meet-robot p {
@@ -335,7 +408,7 @@ img {
   background-color: #9CBCCC;
   border-radius: 50%;
   animation: pulse 5s infinite;
-  margin-left: 30%;
+  margin-left: 27%;
 }
 
 .meet-robot-bubble2{ 
@@ -344,7 +417,7 @@ img {
     background-color: #9CBCCC;
     border-radius: 50%;
     animation: pulse 5s infinite;
-    margin-left: 32%;
+    margin-left: 30%;
 }
 
 .meet-robot-bubble3 {
@@ -353,7 +426,7 @@ img {
     background-color: #9CBCCC;
     border-radius: 50%;
     animation: pulse 5s infinite;
-    margin-left: 30%; 
+    margin-left: 27%; 
 }
 
 @keyframes pulse {
@@ -388,6 +461,44 @@ model-viewer {
     margin-top: -45%;
 }
 
+@media (max-width: 768px) {
+    
+    .meet-robot {
+        margin-top: 10%;
+    }
+    
+    .meet-robot-turtle {
+        margin-right: 60%;
+        width: 10%;
+    } 
+
+    .meet-robot p {
+        font-family:'Barlow';
+        font-size: 20px;
+        text-align: center;
+        margin-right: 58%;
+        padding-bottom: 0%;
+        font-weight: 600;
+    }
+
+    model-viewer {
+        width:200px;
+        height:300px;
+        background-color: transparent;
+        padding-top:10%;
+        margin-left:0%;
+        color: transparent;
+        margin-top: -45%;
+    }
+
+    .model-view {
+        background-image: url('/images/islands/island3.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 20% 0% 10% 10%; 
+        margin: -30% 0% 0% 42%;
+    }
+}
 
 /* NameIsland.js*/
 
@@ -464,6 +575,35 @@ model-viewer {
     animation: pulse 4s infinite;
 }
 
+@media (max-width: 768px) {
+    .name-island {
+        margin-top: -10%;
+    }
+
+    .name-island-title {
+        font-family: 'Archivo', sans-serif;
+        font-style: normal;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    
+    .name-island-subtitle {
+        font-style: normal;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    
+    /* .name-island-body {
+        font-family: 'Poppins';
+        font-size: 1.39vw;
+        font-weight: 300;
+        padding-top: 1.5%;
+        padding-bottom: 1%;
+        margin-left: 11%;
+        margin-right: 7%;
+
+    } */
+}
 
 /* Timeline.js */
 
@@ -606,6 +746,29 @@ model-viewer {
     }
 }
 
+@media (max-width: 768px) {
+    .timeline-submarine-title {
+        font-size: 25px;
+        margin-bottom: 0%;
+    }
+
+    .timeline-submarine-windows p:first-child {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .timeline-submarine-windows p {
+        font-size:12px;
+    }
+
+    .timeline-submarine-windows {
+        display: flex;
+        justify-content: space-between;
+        padding: 12% 7% 12%;
+    }
+}
+
 
 /* ProjectProgress.js */
 
@@ -664,6 +827,41 @@ model-viewer {
     background-image: url('/images/progress/robot-head.png');
 }
 
+@media (max-width: 768px) {
+
+    /* .project-progress-title {
+        font-family: 'Barlow';
+        font-weight: bold;
+        font-size: 30px;
+        padding: 1% 2% !important; 
+    }
+
+    .project-progress {
+        padding: 0 5%;
+        font-size: 10px;
+        text-align: left;
+    }
+
+    .project-progress p {
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+    } */
+
+    /* .project-progress p:nth-child(2) */
+    /* .project-progress p:nth-child(3), */
+    /* .project-progress p:nth-child(4),
+    .project-progress p:nth-child(5)
+    .project-progress p:nth-child(6) {
+    padding: 3% 4%;
+    } */ 
+
+    .project-progress p {
+        font-size: 12px;
+    }
+}
+
+
 /* HomeControls.js */
 
 .home-controls {
@@ -689,6 +887,15 @@ model-viewer {
 .home-controls:hover {
     opacity: 0.3;
 }
+
+@media (max-width: 768px)
+{
+    .home-controls {
+        margin-top:15%;
+        margin-bottom:10%;
+    }
+}
+
 
 
 /* Footer.js */
@@ -741,4 +948,42 @@ model-viewer {
     font-family: 'Poppins';
     font-size: 20px;
 }
+
+@media (max-width: 768px) {
+
+    .footer-container {
+        padding: 10%;
+    }
+    
+    .footer-container-title{
+        font-size: 30px;
+    }
+    
+    .footer-container-email {
+        font-size: 20px;
+        margin: 2% 0;
+    }
+    
+    .footer-container-icons img {
+        width: 48px;
+    }
+
+    .footer-container-icons a {
+        margin: 0 4px;
+    }
+    
+    .footer-container-icons a:hover {
+        margin: 0 50px;
+    }
+    
+    .footer-container > a {
+        font-size: 15px;
+    }
+    
+    .footer-text {
+        font-size: 16px;
+    }
+    
+}
+
 
