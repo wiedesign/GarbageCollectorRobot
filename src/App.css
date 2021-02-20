@@ -94,8 +94,14 @@ img {
 
 @media (max-width: 768px) {
     .navbar li a {
-    font-size: 20px;
-    padding: 10px 16px;
+        font-size: 20px;
+        padding: 10px 16px;
+    }
+}
+
+@media (max-width: 428px) {
+    .navbar li a {
+        font-size: 12px;
     }
 }
 
@@ -110,7 +116,13 @@ img {
 
 @media (max-width: 768px) {
     .home {
-    border: 20px solid #9AD6F3;
+        border: 20px solid #9AD6F3;
+    }
+}
+
+@media (max-width: 428px) {
+    .home {
+        border: 10px solid #9AD6F3;
     }
 }
 
@@ -316,7 +328,26 @@ img {
     .about-island .about-island-body {
         font-size: 10px;
         line-height: 20px;
-     }
+    }
+ }
+
+ @media (max-width: 428px) {
+    .about-island {
+        margin-top: -70%;
+        margin-left:2%;
+    }
+    
+    .about-island .about-island-title {
+        font-size: 17px;
+        padding-left: 4%;
+    }
+    
+    .about-island .about-island-body {
+        font-size: 7px;
+        line-height: 12px;
+        padding-right: 14%;
+        padding-left: 7%;
+    }
  }
 
 
@@ -424,12 +455,44 @@ model-viewer {
 
     model-viewer {
         width:200px;
-        height:300px;
+        height:300px; 
     }
 
     .model-view {
-        margin-right:5%;
-        padding-top:13%;
+        margin-right: 5%;
+        padding-top: 13%;
+    }
+}
+
+@media (max-width: 428px) {
+
+    .meet-robot {
+        margin-top: 10%;
+    }
+
+    .meet-robot > p {
+        font-size: 18px;
+        margin-left: -22%;  
+    }
+
+    .meet-robot-top {
+        margin-left: -20%;
+    }
+
+    .meet-robot-bottom {
+        margin-left: -18%;
+    }
+
+    model-viewer {
+        width: 120px;
+        height: 170px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .model-view {
+        padding: 8% 8% 8% 12%;
+        margin-left: 40%;
     }
 }
 
@@ -495,11 +558,12 @@ model-viewer {
 @media (max-width: 768px) {
     .name-island {
         margin-top: 10%;
+        width: 86%;
     }
 
     .name-island-title {
         font-size: 25px;
-        padding-left: 12%;
+        padding-right: 20%;
     }
     
     .name-island-subtitle {
@@ -511,6 +575,45 @@ model-viewer {
         font-size: 8px;
         line-height: 14px;
         margin: 2%;
+    }
+}
+
+@media (max-width: 428px) {
+    .name-island {
+        margin-top: 80%;
+    }
+
+    .name-island-title {
+        font-size: 18px;
+        padding-right: 18%;
+    }
+    
+    .name-island-subtitle {
+        font-size: 12px;
+        line-height: 14px;;
+        padding: 2% 10% 0% 20%;
+    }
+
+    .name-island-body {
+        font-size: 8px;
+        line-height: 14px;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    .name-island-bubbles.bubble-1 {
+        left: 65%;
+        top: 105%;
+    }
+    
+    .name-island-bubbles.bubble-2 {
+        left: 62%;
+        top: 110%;
+    }
+    
+    .name-island-bubbles.bubble-3 {
+        left: 63%;
+        top: 115%;
     }
 }
 
@@ -680,6 +783,34 @@ model-viewer {
     }
 }
 
+@media (max-width: 428px) {
+    .timeline {
+        margin-top: -56%;
+    }
+
+    .timeline-bubbles.bubbles-3 {
+        margin-bottom: -4%;
+    }
+    
+    .timeline-submarine-title {
+        font-size: 20px;
+    }
+
+    .timeline-submarine-windows p:first-child {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+    }
+
+    .timeline-submarine-windows p {
+        font-size:5px;
+    }
+
+    .timeline-submarine-windows {
+        padding: 12% 7% 12%;
+    }
+}
+
 
 /* ProjectProgress.js */
 
@@ -757,6 +888,58 @@ model-viewer {
     .project-progress p:nth-child(4),
     .project-progress p:nth-child(6) {
         padding: 2% 4% 3% 4%; 
+    }
+}
+
+@media(width: 428px) {
+
+    .project-progress-1 {
+        background-image: url('/images/mobile/research_mobile.png');
+    }
+    
+    .project-progress-2 {
+        background-image: url('/images/mobile/design_mobile.png');
+    }
+    
+    .project-progress-3 {
+        background-image: url('/images/mobile/communication_mobile.png');
+    }
+    
+    .project-progress-4 {
+        background-image: url('/images/mobile/robot-mobility_mobile.png');
+    }
+    
+    .project-progress-5 {
+        background-image: url('/images/mobile/body-trailer_mobile.png');
+    }
+    
+    .project-progress-6 {
+        background-image: url('/images/mobile/robot-links_mobile.png');
+    }
+    
+    .project-progress-7 {
+        background-image: url('/images/mobile/robot-head_mobile.png');
+    }
+
+    .project-progress p {
+        font-size: 8px;
+        padding-top: 3%;
+        padding-bottom: 4%;
+    }
+    .project-progress p:nth-child(3){
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .project-progress p:nth-child(4) {
+        padding-top: 4%;
+        padding-bottom: 3%;
+    }
+
+    .project-progress p:nth-child(7),
+    .project-progress p:nth-child(8) {
+        padding-top: 2%;
+        padding-bottom:2%; 
     }
 }
 
@@ -880,6 +1063,39 @@ model-viewer {
     
     .footer-text {
         font-size: 16px;
+    }
+    
+}
+
+@media (max-width: 428px) {
+
+    .footer-container {
+        padding: 10%;
+    }
+    
+    .footer-container-title{
+        font-size: 14px;
+    }
+    
+    .footer-container-email {
+        font-size: 12px;
+        margin: 2% 0;
+    }
+    
+    .footer-container-icons img {
+        width: 30px;
+    }
+
+    .footer-container-icons a {
+        margin: 0 2px;
+    }
+    
+    .footer-container > a {
+        font-size: 9px;
+    }
+    
+    .footer-text {
+        font-size: 8px;
     }
     
 }
