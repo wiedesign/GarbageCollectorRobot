@@ -80,14 +80,14 @@ img {
 
 .navbar li {
     float: left;
+    padding: 1% 2%;
 }
 
 .navbar li a {
     display: block;
     font-family: 'Barlow';
-    font-size: 36px;
+    font-size: 25px;
     color: black;
-    padding: 5% 30px;
     text-decoration: none;
     cursor: pointer;
 }
@@ -201,8 +201,9 @@ img {
 
 .first-page-logo {
     position: absolute;
-    left: 25%;
+    left: 27%;
     top: 150px;
+    width: 45%;
     z-index: 50;
 }
 
@@ -266,8 +267,6 @@ img {
 
 @media (max-width: 768px) {
     .first-page-logo {
-        left: 27%;
-        width:45%;
         top: 110px;
     }
     
@@ -707,17 +706,13 @@ model-viewer {
 @keyframes pop3 {
     0% {
         transform: scale(0);   
-    }
-    50%{
+    }50%{
         transform: scale(0);
-    }
-    75%{
+    }75%{
         transform: scale(1); 
-    }
-    76%{
+    }76%{
         opacity:1;
-    }
-    100%{
+    }100%{
         opacity:0;
     }
 }
@@ -725,17 +720,13 @@ model-viewer {
 @keyframes pop2 {
     0% {
         transform: scale(0);   
-    }
-    25%{
+    }25%{
         transform:scale(0);
-    }
-    50% {
+    }50% {
         transform: scale(1);
-    }
-    51% {
+    }51% {
         opacity: 1;
-    }
-    100% {
+    }100% {
         opacity: 0;
     }
 }
@@ -743,14 +734,11 @@ model-viewer {
 @keyframes pop1 {
     0% {
         transform: scale(0);   
-    }
-    25% {
+    }25% {
         transform: scale(1);
-    }
-    26% {
+    }26% {
         opacity: 1;
-    }
-    100% {
+    }100% {
         opacity: 0;
     }
 }
@@ -775,7 +763,7 @@ model-viewer {
     }
 
     .timeline-submarine-windows p {
-        font-size:12px;
+        font-size: 12px;
     }
 
     .timeline-submarine-windows {
@@ -1064,7 +1052,6 @@ model-viewer {
     .footer-text {
         font-size: 16px;
     }
-    
 }
 
 @media (max-width: 428px) {
