@@ -773,9 +773,9 @@ model-viewer {
     }
 
     .timeline-submarine-windows p:first-child {
-        width: 40px;
-        height: 40px;
-        font-size: 25px;
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
     }
 
     .timeline-submarine-windows p {
@@ -811,7 +811,7 @@ model-viewer {
     }
 
     .timeline-submarine-windows {
-        padding: 12% 7% 12%;
+        padding: 12% 7%;
     }
 }
 
