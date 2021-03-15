@@ -334,7 +334,7 @@ img {
 
  @media (max-width: 428px) {
     .about-island {
-        margin-top: -5%;
+        margin-top: -21%;
         margin-left:2%;
     }
     
@@ -607,18 +607,18 @@ model-viewer {
     }
 
     .name-island-bubbles.bubble-1 {
-        left: 75%;
-        top: 95%;
+        left: 77%;
+        top: 90%;
     }
     
     .name-island-bubbles.bubble-2 {
-        left: 72%;
-        top: 96%;
+        left: 74%;
+        top: 94%;
     }
     
     .name-island-bubbles.bubble-3 {
-        left: 74%;
-        top: 97%;
+        left: 76%;
+        top: 98%;
     }
 }
 
@@ -788,7 +788,7 @@ model-viewer {
 
 @media (max-width: 428px) {
     .timeline {
-        margin-top: 0%;
+        margin-top: -20%;
     }
 
     .timeline-bubbles.bubbles-3 {
@@ -895,6 +895,17 @@ model-viewer {
 }
 
 @media(width: 428px) {
+    
+    #project-progress-title  {
+        font-size: 20px;
+        padding-bottom: 2%;
+    }
+    
+    .project-progress p {
+        font-size: 8px;
+        padding-top: 3%;
+        padding-bottom: 4%;
+    }
 
     .project-progress-1 {
         background-image: url('/images/mobile/research_mobile.png');
@@ -924,11 +935,6 @@ model-viewer {
         background-image: url('/images/mobile/robot-head_mobile.png');
     }
 
-    .project-progress p {
-        font-size: 8px;
-        padding-top: 3%;
-        padding-bottom: 4%;
-    }
     .project-progress p:nth-child(3){
         padding-top: 5%;
         padding-bottom: 5%;

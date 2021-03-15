@@ -3,7 +3,7 @@ import React from 'react'
 export default function ProjectProgress() {
     return (
         <div className="project-progress">
-            <p className="project-progress-title">Project Progress</p>
+            <p className="project-progress-title" id="project-progress-title">Project Progress</p>
             <p className="project-progress-1"><b>Research:</b> Research scope of project, high level hardware 
                 components, sensors, actuators, communication protocols, web interface.    
             </p>
