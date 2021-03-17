@@ -894,7 +894,7 @@ model-viewer {
     }
 }
 
-@media(width: 428px) {
+@media(max-width: 428px) {
     
     #project-progress-title  {
         font-size: 20px;
