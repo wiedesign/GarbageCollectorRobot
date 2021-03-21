@@ -874,6 +874,7 @@ model-viewer {
 }
 
 @media (max-width: 768px) {
+
     .project-progress-title  {
         font-size: 25px;
         padding-bottom: 2%;
@@ -990,7 +991,6 @@ model-viewer {
         margin-bottom:10%;
     }
 }
-
 
 
 /* Footer.js */
