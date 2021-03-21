@@ -16,8 +16,8 @@ export default function FirstPage() {
             <div className="first-page-container">
                 <div className="first-page-container-image" />
                 <div className="first-page-container-info">
-                    <p>Robot</p>
-                    <p>Version #</p>
+                    <p>ROBERTA</p>
+                    <p>1v1.0</p>
                 </div>
             </div>
             <img src="/images/turtle1.png" alt="" />
