@@ -3,9 +3,9 @@ import { Link as Scroll } from 'react-scroll';
 
 export default function Navbar() {
     return (
-        <div className="navbar">
-            <ul>
-                <li>
+        <section className="navbar">
+            <ul className="navbar__list">
+                <li className="navbar__list__item">
                     <Scroll
                         activeClass="active"
                         to="about-island"
@@ -16,7 +16,7 @@ export default function Navbar() {
                         About
                     </Scroll>
                 </li>
-                <li>
+                <li className="navbar__list__item">
                     <Scroll
                         activeClass="active"
                         to="meet-robot"
@@ -27,7 +27,7 @@ export default function Navbar() {
                         Robot
                     </Scroll>
                 </li>
-                <li>
+                <li className="navbar__list__item">
                     <Scroll
                         activeClass="active"
                         to="timeline"
@@ -38,7 +38,7 @@ export default function Navbar() {
                         Timeline
                     </Scroll>
                 </li>
-                <li>
+                <li className="navbar__list__item">
                     <Scroll 
                         activeClass="active"
                         to="home-controls"
@@ -49,7 +49,7 @@ export default function Navbar() {
                         Controls
                     </Scroll>
                 </li>
-                <li>
+                <li className="navbar__list__item">
                     <Scroll 
                         activeClass="active"
                         to="footer"
@@ -61,6 +61,6 @@ export default function Navbar() {
                     </Scroll>
                 </li>
             </ul>
-        </div>
+        </section>
     )
 }

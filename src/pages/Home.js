@@ -1,11 +1,9 @@
 import React from 'react';
 
-import ProjectProgress from '../components/ProjectProgress';
-import HomeControls from '../components/HomeControls';
-
 export default function Home() {
     return (
         <section className="home">
+
             <div className="home__intro">
                 <div className="home__intro__bubbles bubbles--1" />
                 <div className="home__intro__bubbles bubbles--2" />
@@ -115,11 +113,35 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <ProjectProgress />
             </div>
 
+            <div className="home__progress">
+                <p className="home__progress__title">Project Progress</p>
+                <p className="home__progress__research"><b>Research:</b> Research scope of project, high level hardware 
+                    components, sensors, actuators, communication protocols, web interface.    
+                </p>
+                <p className="home__progress__design"><b>Design:</b> Designing methods for garbage collection and storage mechanism.    
+                </p>
+                <p className="home__progress__communication"><b>Communication:</b> Implementing IoT based communication between web-app and ESP32-Wroom-32 microcontroller.  
+                </p>
+                <p className="home__progress__mobility"><b>Robot Mobility:</b> Research, implementing base motor controller, 
+                    designing and printing chassis, executing base movement controls on web-app.    
+                </p>
+                <p className="home__progress__body"><b>Body and Trailer:</b> Research, designing and assembling robot body and trailer with garbage-collection box.  
+                </p>
+                <p className="home__progress__links"><b>Robot Links and Loader:</b> Research, printing robotic links with a grapple claw loader 
+                    as the end effector, implementing arm and claw movements with steppers, adding UI controls.  
+                </p>
+                <p className="home__progress__head"><b>Robot Head:</b> Research, designing and printing robot head, include recycled PCBs as a 
+                    design aesthetic feature, research optimal video streaming protocol/communication method, 
+                    include camera and live video streaming to the web-app.
+                </p>
+            </div>
 
-            <HomeControls />
+            <div className="home__controls">
+                <p className="home__controls__text">Click for Controls</p>
+            </div>
+
         </section>  
     )
 }
