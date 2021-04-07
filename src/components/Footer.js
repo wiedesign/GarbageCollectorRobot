@@ -14,7 +14,7 @@ export default function Footer() {
                         <img src="/images/footer/linkedin.png" alt="" className="footer__container__icons__links__logo" />
                     </a>
                     <a href="https://www.instagram.com/wiesfu/" target="_blank" rel="noopener noreferrer" className="footer__container__icons__links">
-                        <img src="/images/footer/instagram.png"alt="" className="footer__container__icons__links__logo" />
+                        <img src="/images/footer/instagram.png" alt="" className="footer__container__icons__links__logo" />
                     </a>
                 </div>
                 <a href="http://www.sfu.ca/clubs/wie.html" target="_blank" rel="noopener noreferrer" className="footer__container__links">Visit WiE SFU club website</a>

@@ -13,7 +13,6 @@ body {
     font-family: 'M PLUS 1p', sans-serif;
     padding: 0;
     margin: 0 auto;
-    //
 }
 
 p {
@@ -241,6 +240,9 @@ img {
             width: 13%;
             margin-right: 17%;
             margin-bottom: 10%;
+            font-family: 'Poppins';
+            font-weight: 600;
+            font-size: 1.6vw;
         }
     }
 
@@ -273,6 +275,22 @@ img {
     }
 }
 
+@media (max-width: 428px) {
+    .home__intro {
+        &__logo {
+            top: 50px;
+        }
+        
+        &__container__info {
+            margin: 20% 17% -5% 0;
+        }
+
+        &__container__image {
+            width: 20%;
+            padding-top: 19%;
+        }
+    }
+}
 
 /* Home About */
 
@@ -350,7 +368,7 @@ img {
     }
 
     .home__robot__text {
-        font-family:'Barlow';
+        font-family: 'Barlow';
         font-size: 2.5vw;
         text-align: center;
         padding-bottom: 0%;
@@ -536,9 +554,9 @@ model-viewer {
         margin-top: 10%;
         margin-bottom: 0%;
 
-        &__text {
-            font-size: 18px;
-            margin-left: -22%;  
+        .home__robot__text {
+            margin-left: -22%;
+            font-size: 15px;  
         }
 
         &__top {
@@ -583,8 +601,8 @@ model-viewer {
             
             &__subtitle {
                 font-size: 11px;
-                line-height: 14px;;
-                padding: 2% 10% 0% 20%;
+                line-height: 14px;
+                padding: 2% 24% 0% 27%;
             }
         
             &__body {
@@ -777,8 +795,8 @@ model-viewer {
 
                 &__window__number {
                     width: 30px;
-                height: 30px;
-                font-size: 20px;
+                    height: 30px;
+                    font-size: 20px;
                 }
     
                 &__window__text {
@@ -812,7 +830,8 @@ model-viewer {
                 }
     
                 &__window__text {
-                    font-size: 5px;
+                    font-size: 6px;
+                    margin-bottom: 11%;
                 }
             }
         }
@@ -901,13 +920,14 @@ model-viewer {
 
 @media(max-width: 428px) {
     .home__progress {
+        font-size: 8px;
+
         &__title {
             font-size: 20px;
             padding-bottom: 2%;
         }
 
         & p {
-            font-size: 8px;
             padding-top: 3%;
             padding-bottom: 4%;
         }
@@ -996,7 +1016,6 @@ model-viewer {
     }
 }
 
-
 /* Footer.js */
 
 .footer {
@@ -1025,6 +1044,10 @@ model-viewer {
         &__icons {
             &__links {
                 margin: 0 10px;
+
+                &__logo {
+                    min-width: 100%;
+                }
             }
 
             &__links:hover {
