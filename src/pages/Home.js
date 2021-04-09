@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 export default function Home() {
     return (
@@ -139,7 +140,7 @@ export default function Home() {
             </div>
 
             <div className="home__controls">
-                <p className="home__controls__text">Click for Controls</p>
+                <Link to="/controls" className="home__controls__text">Click for Controls</Link>
             </div>
 
         </section>  
