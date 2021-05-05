@@ -18,8 +18,8 @@ class Example extends Component {
 render() {
     return(
         <section className="actionControls">
-        <link href="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.css" rel="stylesheet" />
             <div className ="actionControls__container">
+            <link href="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.css" rel="stylesheet" />
                 <div id="slider"/>
                 <div className="actionControls__container__btns">
                     <button className="actionControls__container__btns__up" />

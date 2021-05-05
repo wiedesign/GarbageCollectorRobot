@@ -1,7 +1,7 @@
 
 .controls {
     background-color: #F6E2BC;
-
+    padding-bottom: 5%;
     button:hover {
         cursor: pointer;
     }
@@ -41,8 +41,15 @@
 
     &__bottomSection {
         display: flex;
-        flex-flow: row;
         justify-content: space-between;
+
+        &__actionControls {
+            margin-left: 1%;
+        }
+
+        &__movementControls {
+            margin-right: 1%;
+        }
     }
 }
 
@@ -118,8 +125,6 @@
         }
     }
 }
-
-
 
 .movementControls {
     background-color: #A9D09E;
