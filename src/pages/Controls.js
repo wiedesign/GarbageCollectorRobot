@@ -11,12 +11,14 @@ export default function Controls() {
                 <div className="controls__hero__video">
                     <p className="controls__hero__video--on">ON</p>
                 </div>
-                <div className="controls__hero__icons">
-                    <button className="controls__hero__icons__ble"/>
-                    <button className="controls__hero__icons__wifi"/>
+                <div className="controls__hero__left">
+                    <div className="controls__hero__left__icons">
+                        <button className="controls__hero__left__icons__ble"/>
+                        <button className="controls__hero__left__icons__wifi"/>
+                    </div>
+                    <img className="controls__hero__left__umbrella" src="/images/controller/controls-umbrella.svg"/>
                 </div>
-                
-            </div>            
+            </div>         
             <button className="controls__clawOpenbtn">Claw Open</button>
             <div className="controls__bottomSection">
                 <div className="controls__bottomSection__actionControls">
