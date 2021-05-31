@@ -8,7 +8,7 @@ export default function Navbar() {
                 <li className="navbar__list__item">
                     <Scroll
                         activeClass="active"
-                        to="about-island"
+                        to="home__about"
                         spy={true}
                         smooth={true}
                         offset={-150}
@@ -19,7 +19,7 @@ export default function Navbar() {
                 <li className="navbar__list__item">
                     <Scroll
                         activeClass="active"
-                        to="meet-robot"
+                        to="home__robot"
                         spy={true}
                         smooth={true}
                         offset={-100}
@@ -30,7 +30,7 @@ export default function Navbar() {
                 <li className="navbar__list__item">
                     <Scroll
                         activeClass="active"
-                        to="timeline"
+                        to="home__timeline"
                         spy={true}
                         smooth={true}
                         offset={-100}
@@ -41,7 +41,7 @@ export default function Navbar() {
                 <li className="navbar__list__item">
                     <Scroll 
                         activeClass="active"
-                        to="home-controls"
+                        to="home__controls"
                         spy={true}
                         smooth={true}
                         offset={-190}
