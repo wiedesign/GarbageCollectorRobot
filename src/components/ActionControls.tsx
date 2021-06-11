@@ -1,19 +1,19 @@
 import React, { Component } from 'react'
-// import $ from "jquery";
-// window.jQuery = $;
-// require ("round-slider");
+import $ from "jquery";
+window.jQuery = $;
+require("round-slider");
 
 class Example extends Component {
-    // componentDidMount() {  
-    //     $("#slider").roundSlider({
-    //      circleShape: "pie",
-    //      startAngle: 315,
-    //      showTooltip: false,
-    //      lineCap: "round",
-    //      radius: 165,
-    //      width: 30,
-    //     });
-    // }
+    componentDidMount() {  
+        $("#slider").roundSlider({
+         circleShape: "pie",
+         startAngle: 315,
+         showTooltip: false,
+         lineCap: "round",
+         radius: 165,
+         width: 30,
+        });
+    }
  
     render() {
         return(

@@ -54,7 +54,7 @@ const Home: React.FC = () => {
                 </div>
                 <div className="home__robot__model">
                     <model-viewer
-                        src={RobertaModel}
+                        src="/3d-model/SN_RobotAssembly.glb"
                         alt="A 3D model of a robot"
                         auto-rotate=""
                         camera-controls=""

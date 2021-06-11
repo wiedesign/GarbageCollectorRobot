@@ -12,8 +12,8 @@
     "@types/react-router-dom": "^5.1.7",
     "jquery": "^3.6.0",
     "node-sass": "^4.14.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-native-circular-slider": "^1.0.1",
     "react-native-svg": "^12.1.1-0",
     "react-router-dom": "^5.2.0",
@@ -21,7 +21,8 @@
     "react-scroll": "^1.8.1",
     "reactjs-popup": "^2.0.4",
     "round-slider": "^1.6.1",
-    "social-media-icons-react": "^1.1.2"
+    "social-media-icons-react": "^1.1.2",
+    "three": "^0.109.0"
   },
   "scripts": {
     "start": "react-scripts start",
