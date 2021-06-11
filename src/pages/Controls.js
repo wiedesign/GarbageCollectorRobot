@@ -14,7 +14,7 @@ export default function Controls() {
                 <div className="controls__hero__left">
                     <div className="controls__hero__left__icons">
                         <button className="controls__hero__left__icons__ble"/>
-                        <button className="controls__hero__left__icons__wifi"/>
+                        <Link to="/demo"><button className="controls__hero__left__icons__wifi"/></Link>
                     </div>
                     <img className="controls__hero__left__umbrella" src="/images/controller/controls-umbrella.svg" alt="" />
                 </div>
