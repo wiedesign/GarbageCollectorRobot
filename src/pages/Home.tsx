@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
+// import RobertaModel from "../../public/3d-model/SN_RobotAssembly.glb"
+
 const Home: React.FC = () => {
     return (
         <section className="home">
@@ -54,7 +56,7 @@ const Home: React.FC = () => {
                 </div>
                 <div className="home__robot__model">
                     <model-viewer
-                        src="/3d-model/SN_RobotAssembly.glb"
+                        src={"/3d-model/SN_RobotAssembly.glb"}
                         alt="A 3D model of a robot"
                         auto-rotate=""
                         camera-controls=""

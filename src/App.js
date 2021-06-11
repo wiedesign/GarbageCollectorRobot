@@ -5,7 +5,7 @@ import './Home.scss';
 import './Controls.scss';
 
 import Controls from './pages/Controls';
-import Home from './pages/Home';
+import Home from './pages/Home.tsx';
 
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
