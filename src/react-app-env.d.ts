@@ -2,10 +2,10 @@
 
 declare namespace JSX {
     interface IntrinsicElements {
-        'model-viewer': any
+        'model-viewer': any;
     }
 }
 
 interface Window {
     jQuery: any;
-  }
+}

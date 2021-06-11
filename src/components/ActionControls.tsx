@@ -5,7 +5,7 @@ require("round-slider");
 
 class Example extends Component {
     componentDidMount() {  
-        $("#slider").roundSlider({
+        ($("#slider") as any).roundSlider({
          circleShape: "pie",
          startAngle: 315,
          showTooltip: false,
