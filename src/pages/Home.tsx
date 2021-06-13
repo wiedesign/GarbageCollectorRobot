@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-// import RobertaModel from "../../public/3d-model/SN_RobotAssembly.glb"
-
 const Home: React.FC = () => {
     return (
         <section className="home">
