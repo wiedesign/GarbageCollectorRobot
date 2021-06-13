@@ -1,7 +1,6 @@
 import React from 'react'
 
-
-export default function MovementControls() {
+const MovementControls: React.FC = () => {
     return (
         <section className="movementControls">
             <div className="movementControls__container">
@@ -16,4 +15,6 @@ export default function MovementControls() {
             </div> 
         </section>
     )
-}
+};
+
+export default MovementControls;

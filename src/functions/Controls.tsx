@@ -1,9 +1,8 @@
 import React from 'react';
 import { Switch, Route, Link, useRouteMatch } from 'react-router-dom';
-
 import Topic from './Topic';
 
-export default function Controls() {
+const Controls: React.FC = () => {
     let match = useRouteMatch();
     return (
         <div className="controls">
@@ -30,4 +29,6 @@ export default function Controls() {
             </Switch>
         </div>
     )
-}
+};
+
+export default Controls;

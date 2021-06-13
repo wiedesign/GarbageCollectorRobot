@@ -1,14 +1,14 @@
 import React from 'react'
 import { Link as Scroll } from 'react-scroll';
 
-export default function Navbar() {
+const NavBar: React.FC = () => {
     return (
         <section className="navbar">
             <ul className="navbar__list">
                 <li className="navbar__list__item">
                     <Scroll
                         activeClass="active"
-                        to="home__about"
+                        to="about-island"
                         spy={true}
                         smooth={true}
                         offset={-150}
@@ -19,7 +19,7 @@ export default function Navbar() {
                 <li className="navbar__list__item">
                     <Scroll
                         activeClass="active"
-                        to="home__robot"
+                        to="meet-robot"
                         spy={true}
                         smooth={true}
                         offset={-100}
@@ -30,7 +30,7 @@ export default function Navbar() {
                 <li className="navbar__list__item">
                     <Scroll
                         activeClass="active"
-                        to="home__timeline"
+                        to="timeline"
                         spy={true}
                         smooth={true}
                         offset={-100}
@@ -41,7 +41,7 @@ export default function Navbar() {
                 <li className="navbar__list__item">
                     <Scroll 
                         activeClass="active"
-                        to="home__controls"
+                        to="home-controls"
                         spy={true}
                         smooth={true}
                         offset={-190}
@@ -64,3 +64,5 @@ export default function Navbar() {
         </section>
     )
 }
+
+export default NavBar;

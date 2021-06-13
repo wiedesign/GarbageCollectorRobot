@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import ActionControls from '../components/ActionControls'
 import MovementControls from '../components/MovementControls'
 
-export default function Controls() {
+const Controls: React.FC = () =>{
     return (
         <section className="controls">
             <div className="controls__hero">
@@ -11,14 +11,12 @@ export default function Controls() {
                 <div className="controls__hero__video">
                     <p className="controls__hero__video--on">ON</p>
                 </div>
-                <div className="controls__hero__left">
-                    <div className="controls__hero__left__icons">
-                        <button className="controls__hero__left__icons__ble"/>
-                        <button className="controls__hero__left__icons__wifi"/>
-                    </div>
-                    <img className="controls__hero__left__umbrella" src="/images/controller/controls-umbrella.svg" alt="" />
+                <div className="controls__hero__icons">
+                    <button className="controls__hero__icons__ble"/>
+                    <button className="controls__hero__icons__wifi"/>
                 </div>
-            </div>         
+                
+            </div>            
             <button className="controls__clawOpenbtn">Claw Open</button>
             <div className="controls__bottomSection">
                 <div className="controls__bottomSection__actionControls">
@@ -31,4 +29,6 @@ export default function Controls() {
             </div>
         </section>
     )
-}
+};
+ 
+export default Controls;
