@@ -28,7 +28,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint:prettier": "prettier --write \"./src/**/*.{ts,tsx,scss}\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -48,6 +49,7 @@
   "devDependencies": {
     "@types/jquery": "^3.5.5",
     "@types/react-scroll": "^1.8.2",
+    "prettier": "^2.3.1",
     "source-map-loader": "^3.0.0",
     "ts-loader": "^9.2.1",
     "typescript": "^4.2.4"
