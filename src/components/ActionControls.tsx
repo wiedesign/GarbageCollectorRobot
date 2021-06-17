@@ -3,8 +3,6 @@ import $ from "jquery";
 window.jQuery = $;
 require("round-slider");
 
-const test = 4;
-
 class Example extends Component {
   componentDidMount() {
     ($("#slider") as any).roundSlider({

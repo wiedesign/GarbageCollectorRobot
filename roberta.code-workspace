@@ -46,11 +46,17 @@
 			"editor.rulers": [80],
 			"editor.tabSize": 2,
 			"editor.wordWrapColumn": 80
-		}
+		},
+		"eslint.validate": [
+			"typescript",
+			"typescriptreact"
+		],
+		"eslint.workingDirectories": ["."]
 	},
 	"extensions": {
 		"recommendations": [
-			"esbenp.prettier-vscode"
+			"esbenp.prettier-vscode",
+			"dbaeumer.vscode-eslint"
 		]
 	}
 }

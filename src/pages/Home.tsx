@@ -1,10 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const test = {
-  test: 2,
-};
-
 const Home: React.FC = () => {
   return (
     <section className="home">
