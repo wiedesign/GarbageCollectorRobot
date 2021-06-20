@@ -19,7 +19,6 @@ export default function Controls() {
                     <img className="controls__hero__left__umbrella" src="/images/controller/controls-umbrella.svg"/>
                 </div>
             </div>         
-            <button className="controls__clawOpenbtn">Claw Open</button>
             <div className="controls__bottomSection">
                 <div className="controls__bottomSection__actionControls">
                     <ActionControls />
