@@ -1,20 +1,8 @@
 import React from 'react'
-
-
-export default function MovementControls() {
-    function clawState() {
-        var claw = document.getElementById("clawBtn");
-        if (claw.innerHTML == "Claw Open")
-        {
-            claw.innerHTML = "Claw Closed";
-        }   
-        else {
-            claw.innerHTML = "Claw Open";
-        }
-    }
+const MovementControls: React.FC = () => {
     return (
         <section className="movementControls">
-            <button className="movementControls__clawBtn" id="clawBtn" onClick={clawState}>Claw Open</button>
+        <button className="movementControls__clawBtn" id="clawBtn">Claw Open</button>
             <div className="movementControls__container">
                 <div className ="movementControls__container__btns">
                     <button className ="movementControls__container__btns__up" />
@@ -27,4 +15,6 @@ export default function MovementControls() {
             </div> 
         </section>
     )
-}
+};
+
+export default MovementControls;

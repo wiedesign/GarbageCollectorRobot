@@ -1,7 +1,10 @@
 import React from 'react'
 import { Link as Scroll } from 'react-scroll';
+import Sponsorship from '../pages/Sponsorship';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-export default function Navbar() {
+
+const NavBar: React.FC = () => {
     return (
         <section className="navbar">
             <ul className="navbar__list">
@@ -50,6 +53,9 @@ export default function Navbar() {
                     </Scroll>
                 </li>
                 <li className="navbar__list__item">
+                <a href="sponsorship">Sponsorship</a>
+                </li>
+                <li className="navbar__list__item">
                     <Scroll 
                         activeClass="active"
                         to="footer"
@@ -64,3 +70,5 @@ export default function Navbar() {
         </section>
     )
 }
+
+export default NavBar;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Footer() {
+const Footer: React.FC = () => {
     return (
         <section className="footer">
             <div className="footer__container">
@@ -23,3 +23,5 @@ export default function Footer() {
         </section>
     )
 }
+
+export default Footer;
