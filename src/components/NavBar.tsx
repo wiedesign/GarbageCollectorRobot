@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link as Scroll } from 'react-scroll';
-import Sponsorship from '../pages/Sponsorship';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
@@ -11,7 +10,7 @@ const NavBar: React.FC = () => {
                 <li className="navbar__list__item">
                     <Scroll
                         activeClass="active"
-                        to="about-island"
+                        to="home__about"
                         spy={true}
                         smooth={true}
                         offset={-150}
@@ -22,7 +21,7 @@ const NavBar: React.FC = () => {
                 <li className="navbar__list__item">
                     <Scroll
                         activeClass="active"
-                        to="meet-robot"
+                        to="home__robot"
                         spy={true}
                         smooth={true}
                         offset={-100}
@@ -33,7 +32,7 @@ const NavBar: React.FC = () => {
                 <li className="navbar__list__item">
                     <Scroll
                         activeClass="active"
-                        to="timeline"
+                        to="home__timeline"
                         spy={true}
                         smooth={true}
                         offset={-100}
@@ -44,7 +43,7 @@ const NavBar: React.FC = () => {
                 <li className="navbar__list__item">
                     <Scroll 
                         activeClass="active"
-                        to="home-controls"
+                        to="home__controls"
                         spy={true}
                         smooth={true}
                         offset={-190}
@@ -53,7 +52,15 @@ const NavBar: React.FC = () => {
                     </Scroll>
                 </li>
                 <li className="navbar__list__item">
-                <a href="sponsorship">Sponsorship</a>
+                <Scroll 
+                        activeClass="active"
+                        to="home__sponsorship"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}> 
+                        Sponsorship
+                    </Scroll>
                 </li>
                 <li className="navbar__list__item">
                     <Scroll 

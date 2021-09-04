@@ -983,6 +983,305 @@ model-viewer {
     }
 }
 
+/* Home Sponsorship */
+.home__sponsorship {
+    overflow-x: hidden;
+    padding-top: 170px;
+
+    p {
+        font-family: Poppins;
+        text-align: left;
+    }
+
+    &__anchor {
+        width: 20%;
+        margin-bottom: -70px;
+    }
+
+    &__robot__container {
+        position: relative;
+        width: 1100px;
+        margin: 0 auto;
+    }
+
+    &__robot {
+        position: absolute;
+        z-index: 2;
+        right: 82px;
+        top: -24px;
+        width: 140px;
+
+        &__heart {
+            position: absolute;
+            right: 15px;
+            top: -111px;
+            transition: 0.5s;
+            width: 82px;
+            transition: 0.5s;
+
+            &:hover {
+                animation: pulse 3s;
+                top: -135px;
+                transition: 2s;
+            }
+        }
+    }
+
+    &__intro {
+        text-align: center;
+        background-image: url('/images/sponsorship/sponsorship_island.png');
+        background-repeat: no-repeat;
+        height: 379px;
+        margin: 0 auto;
+        max-width: 1100px;
+        width: 100%;
+        background-size: 1100px;
+        z-index: 5;
+        position: relative;
+
+        &__title {
+            font-size: 45px;
+            line-height: 54px;
+            position: absolute;
+            top: 46px;
+            left: 76px;
+        }
+
+        &__text {
+            text-align: center !important;
+            top: 130px;
+            left: 354px;
+            font-size: 18px;
+            width: 605px;
+            position: absolute;
+            line-height: 35px;
+        }
+    }
+
+    &__list {
+        background-color: #EAF6FC;
+        width: 100%;
+        max-width: 1100px;
+        margin: 0px auto;
+        padding: 30px 0px;
+        position: relative;
+        z-index: 4;
+        
+        &__title {
+            background-image: url('/images/sponsorship/island-1-sponsorship.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 223px;
+            text-align: center;
+
+            &__text {
+                font-weight: bold;
+                font-size: 64px;
+                line-height: 96px;
+                position: relative;
+                top: 52px;
+            }
+        }
+
+        &__level {
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 54px;
+        }
+
+        &__item {
+            display: flex;
+            margin: 0 auto;
+            width: fit-content;
+            position: relative;
+
+            &__image-1 {
+                width: 420px;
+                margin-right: 59px;
+            }
+            
+            &__image-2 {
+                width: 461px;
+                margin: auto;
+                margin-right: 76px;
+            }
+
+            &__description {
+                font-size: 20px;
+                line-height: 33.5px;
+                width: 717px;
+            }
+
+            & > a {
+                text-align: left;
+                text-decoration: underline;
+                color: #6D95A8;
+            }
+        }
+    }
+}
+
+@keyframes pulse {
+    33% {
+        transform: rotate(35deg);
+    }
+
+    66% {
+        transform: rotate(-35deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes bubble-pulse {
+    0% {
+        transform: scale(.7);
+        transform: translate(0%, 50%);
+    }
+
+    50% {
+        transform: scale(1.5);
+        transform: translate(50%, -50%);
+    }
+
+    100% {
+        transform: scale(.7);
+        transform: translate(0%, 50%);
+    }
+}
+
+@media(max-width: 1380px) {
+    .home__sponsorship {
+        &__intro {
+            background-size: 72vw;
+            margin-left: 9vw;
+            width: 100%;
+            height: 27vw;
+
+            &__title {
+                font-size: 2.5vw;
+                top: 3vw;
+                left: 6vw;
+                line-height: 4vw;
+            }
+
+            &__text {
+                top: 8vw;
+                left: 23vw;
+                font-size: 1.1vw;
+                width: 40vw;
+                line-height: 3vw;
+            }
+        }
+    
+        &__robot__container {
+            width: 80%;
+        }
+    
+        &__robot {
+            right: 7vw;
+            top: -2vw;
+            width: 10vw;
+
+            &__heart {
+                position: absolute;
+                right: 27px;
+                top: -8vw;
+                transition: 0.5s;
+                width: 5vw;
+    
+                &:hover {
+                    animation: pulse 3s;
+                    top: -145px;
+                    transition: 2s;
+                }
+            }
+        }
+    
+        &__list {
+            width: 100%;
+            padding: 50px 0px 0px;
+
+            &__title {
+                background-position: center;
+                background-size: contain;
+                margin: 0 auto;
+                width: 90%;
+                height: 114px;
+    
+                &__text {
+                    font-size: 32px;
+                    line-height: 16px;
+                    top: 47px;
+                }
+            }
+    
+            &__level {
+                font-size: 32px;
+                width: 90%;
+                margin: 30px auto 40px;
+            }
+    
+            &__item {
+                flex-direction: column;
+                width: 90%;
+                align-content: center;
+                margin: 0 auto;
+
+                &__image-1, &__image-2 {
+                    width: 300px;
+                    margin: 0px auto 20px;
+                }
+    
+                &__description {
+                    font-size: 22px;
+                    line-height: 36px;
+                    width: 100%;
+                    margin-bottom: 20px;
+                    height: 113px;
+                    overflow: hidden;
+                }
+
+            }
+        }
+    }
+}
+
+@media(max-width: 1000px) {
+    .home__sponsorship {
+        &__list {
+            &__item__description {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media(max-width: 900px) {
+
+}
+
+@media(max-width: 700px) {
+    .home__sponsorship {
+        &__list {
+            &__title__text {
+                font-size: 24px;
+            }
+
+            &__level {
+                font-size: 22px;
+            }
+
+            &__item__description {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+
 
 /* Home Controls */
 

@@ -2,6 +2,32 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 const Home: React.FC = () => {
+    function expandText_1() {
+        let text_snippets = document.getElementsByClassName('description_1') as HTMLCollectionOf<HTMLElement>;
+        let action_link = document.getElementsByClassName('action_description_1') as HTMLCollectionOf<HTMLElement>;
+        if(action_link[0].innerHTML=="see more") {
+            text_snippets[0].style.height = "100%";
+            action_link[0].innerHTML= "see less";
+        }
+        else {
+            text_snippets[0].style.height = "113px";
+            action_link[0].innerHTML = "see more";
+        }
+    }
+
+    function expandText_2() {
+        let text_snippets = document.getElementsByClassName('description_2') as HTMLCollectionOf<HTMLElement>;
+        let action_link = document.getElementsByClassName('action_description_2') as HTMLCollectionOf<HTMLElement>;
+        if(action_link[0].innerHTML=="see more") {
+            text_snippets[0].style.height = "100%";
+            action_link[0].innerHTML="see less";
+        }
+        if(action_link[0].innerHTML == "113px") {
+            text_snippets[0].style.height = "50%";
+            action_link[0].innerHTML = "see more";
+        }
+    }
+
     return (
         <section className="home">
 
@@ -137,6 +163,68 @@ const Home: React.FC = () => {
                     design aesthetic feature, research optimal video streaming protocol/communication method, 
                     include camera and live video streaming to the web-app.
                 </p>
+            </div>
+
+            <div className="home__sponsorship">
+                <div className="home__sponsorship__robot__container">
+                    <img className="home__sponsorship__robot" src="/images/sponsorship/robot-sponsorship.svg" />
+                    <img className="home__sponsorship__robot__heart" src="/images/sponsorship/sponsorship_heart.png" />
+                </div>
+                <div className="home__sponsorship__intro">
+                    <p className="home__sponsorship__intro__title">Our Sponsors</p>
+                    <p className="home__sponsorship__intro__text">
+                        Women in Engineering Design would not be 
+                        possible without the continued support and 
+                        guidance from our sponsors.  
+                        We are grateful for their efforts in 
+                        encouraging self identifying women in 
+                        engineering and are honoured to work 
+                        together in furthering diversity in the 
+                        applied sciences.
+                    </p>
+                </div>
+                
+                <div className="home__sponsorship__list">
+                    <p className="home__sponsorship__list__level">Gold Level</p>
+                    <div className="home__sponsorship__list__item">
+                        <img className="home__sponsorship__list__item__image-1" src="/images/sponsorship/green-sky.svg"/>
+                        <p className="home__sponsorship__list__item__description description_1">
+                            As a bespoke consultancy service, Green Sky is able to 
+                            partner with other specialists within the field to create 
+                            a custom, tailor-made team for each individual client. We 
+                            specialize in delivering enhanced business performance through 
+                            improved sustainability solutions. Our goal is to help 
+                            organizations understand the importance of sustainable 
+                            business practice, identify issues of sustainability 
+                            within your existing setup, and work with you to provide 
+                            support as well as solutions. We provide climate change 
+                            mitigation, adaptation, and related sustainability services. 
+                            This means GHG verification for reports and offset projects, 
+                            GHG quantification and carbon footprinting, Life Cycle 
+                            Assessments, offset project development, and more – all 
+                            customized to your business.
+                        </p><a onClick={expandText_1} className="action_description_1">see more</a>
+                    </div>
+                    <p className="home__sponsorship__list__level">In-Kind</p>
+                    <div className="home__sponsorship__list__item">
+                        <img className="home__sponsorship__list__item__image-2" src="/images/sponsorship/zaber.svg"/>
+                        <p className="home__sponsorship__list__item__description description_2">
+                            Zaber Technologies is a steadily growing, employee-owned 
+                            company which designs, manufactures, and sells precision 
+                            motion control equipment for high-tech markets around the world. 
+                            We strive to create an open, friendly, and high-achieving work 
+                            environment. Our staff are progressive, enthusiastic individuals 
+                            whose hobbies and interests are reflected in the work we do. Some
+                            aspects of Zaber that our employees especially enjoy include the
+                            people, the sense of community, flexible hours, level of 
+                            employee engagement, and opportunities to learn. Most of us 
+                            cycle, bus, or carpool to work and put in extra effort to make 
+                            sustainable choices. Last, but not least, our office has several 
+                            friendly dogs.
+                        </p>
+                        <a onClick={expandText_1} className="action_description_2">see more</a>
+                    </div>
+                </div>
             </div>
 
             <div className="home__controls">

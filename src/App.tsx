@@ -7,7 +7,6 @@ import Controls from './pages/Controls';
 import Home from './pages/Home';
 import Footer from './components/Footer';
 import NavBar from './components/NavBar';
-import Sponsorship from './pages/Sponsorship';
 
 const App: React.FC = () => {
     return(
@@ -16,7 +15,6 @@ const App: React.FC = () => {
             <Switch>
                 <Route path="/controls" exact component={Controls} />
                 <Route path="/" exact component={Home} />
-                <Route path="/sponsorship" exact component={Sponsorship} />
             </Switch>
             <Footer />
         </Router>
