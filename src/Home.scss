@@ -983,6 +983,7 @@ model-viewer {
     }
 }
 
+
 /* Home Sponsorship */
 .home__sponsorship {
     overflow-x: hidden;
@@ -1186,7 +1187,6 @@ model-viewer {
             width: 10vw;
 
             &__heart {
-                position: absolute;
                 right: 27px;
                 top: -8vw;
                 transition: 0.5s;
@@ -1257,10 +1257,6 @@ model-viewer {
             }
         }
     }
-}
-
-@media(max-width: 900px) {
-
 }
 
 @media(max-width: 700px) {

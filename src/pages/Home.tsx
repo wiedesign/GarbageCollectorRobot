@@ -222,7 +222,7 @@ const Home: React.FC = () => {
                             sustainable choices. Last, but not least, our office has several 
                             friendly dogs.
                         </p>
-                        <a onClick={expandText_1} className="action_description_2">see more</a>
+                        <a onClick={expandText_2} className="action_description_2">see more</a>
                     </div>
                 </div>
             </div>
