@@ -5,10 +5,9 @@ const Home: React.FC = () => {
     function expandText_1() {
         let text_snippets = document.getElementsByClassName('description_1') as HTMLCollectionOf<HTMLElement>;
         let action_link = document.getElementsByClassName('action_description_1') as HTMLCollectionOf<HTMLElement>;
-        if(action_link[0].innerHTML=="Show more...") {
+        if(action_link[0].innerHTML == "Show more...") {
             text_snippets[0].style.height = "100%";
-            text_snippets[0].style.transition = "0.3s";
-            action_link[0].innerHTML= "Show less";
+            action_link[0].innerHTML = "Show less";
         }
         else {
             text_snippets[0].style.height = "113px";
@@ -19,10 +18,9 @@ const Home: React.FC = () => {
     function expandText_2() {
         let text_snippets = document.getElementsByClassName('description_2') as HTMLCollectionOf<HTMLElement>;
         let action_link = document.getElementsByClassName('action_description_2') as HTMLCollectionOf<HTMLElement>;
-        if(action_link[0].innerHTML=="Show more..") {
+        if(action_link[0].innerHTML == "Show more...") {
             text_snippets[0].style.height = "100%";
-            text_snippets[0].style.transition = "0.3s";
-            action_link[0].innerHTML="Show less";
+            action_link[0].innerHTML = "Show less";
         }
         else {
             text_snippets[0].style.height = "113px"; 
