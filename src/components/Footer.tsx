@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
                     <a href="https://www.linkedin.com/groups/8546476/" target="_blank" rel="noopener noreferrer" className="footer__container__icons__links">
                         <img src="/images/footer/linkedin.png" alt="" className="footer__container__icons__links__logo" />
                     </a>
-                    <a href="https://www.instagram.com/wiesfu/" target="_blank" rel="noopener noreferrer" className="footer__container__icons__links">
+                    <a href="https://instagram.com/sfu_wiedesign" target="_blank" rel="noopener noreferrer" className="footer__container__icons__links">
                         <img src="/images/footer/instagram.png" alt="" className="footer__container__icons__links__logo" />
                     </a>
                 </div>

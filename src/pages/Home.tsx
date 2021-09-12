@@ -5,26 +5,28 @@ const Home: React.FC = () => {
     function expandText_1() {
         let text_snippets = document.getElementsByClassName('description_1') as HTMLCollectionOf<HTMLElement>;
         let action_link = document.getElementsByClassName('action_description_1') as HTMLCollectionOf<HTMLElement>;
-        if(action_link[0].innerHTML=="see more") {
+        if(action_link[0].innerHTML=="Show more...") {
             text_snippets[0].style.height = "100%";
-            action_link[0].innerHTML= "see less";
+            text_snippets[0].style.transition = "0.3s";
+            action_link[0].innerHTML= "Show less";
         }
         else {
             text_snippets[0].style.height = "113px";
-            action_link[0].innerHTML = "see more";
+            action_link[0].innerHTML = "Show more...";
         }
     }
 
     function expandText_2() {
         let text_snippets = document.getElementsByClassName('description_2') as HTMLCollectionOf<HTMLElement>;
         let action_link = document.getElementsByClassName('action_description_2') as HTMLCollectionOf<HTMLElement>;
-        if(action_link[0].innerHTML=="see more") {
+        if(action_link[0].innerHTML=="Show more..") {
             text_snippets[0].style.height = "100%";
-            action_link[0].innerHTML="see less";
+            text_snippets[0].style.transition = "0.3s";
+            action_link[0].innerHTML="Show less";
         }
-        if(action_link[0].innerHTML == "113px") {
-            text_snippets[0].style.height = "50%";
-            action_link[0].innerHTML = "see more";
+        else {
+            text_snippets[0].style.height = "113px"; 
+            action_link[0].innerHTML = "Show more...";
         }
     }
 
@@ -203,7 +205,7 @@ const Home: React.FC = () => {
                             GHG quantification and carbon footprinting, Life Cycle 
                             Assessments, offset project development, and more – all 
                             customized to your business.
-                        </p><a onClick={expandText_1} className="action_description_1">see more</a>
+                        </p><a onClick={expandText_1} className="action_description_1">Show more...</a>
                     </div>
                     <p className="home__sponsorship__list__level">In-Kind</p>
                     <div className="home__sponsorship__list__item">
@@ -222,7 +224,7 @@ const Home: React.FC = () => {
                             sustainable choices. Last, but not least, our office has several 
                             friendly dogs.
                         </p>
-                        <a onClick={expandText_2} className="action_description_2">see more</a>
+                        <a onClick={expandText_2} className="action_description_2">Show more...</a>
                     </div>
                 </div>
             </div>
