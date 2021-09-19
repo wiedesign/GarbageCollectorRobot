@@ -1,0 +1,62 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"[json]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode",
+			"editor.formatOnPaste": true,
+			"editor.formatOnSave": true,
+			"editor.formatOnType": true,
+		},
+		"[markdown]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode",
+			"editor.formatOnPaste": true,
+			"editor.formatOnSave": true,
+			"editor.formatOnType": true,
+			"editor.rulers": [80],
+			"editor.tabSize": 2,
+			"editor.wordWrapColumn": 80
+		},
+		"[scss]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode",
+			"editor.formatOnPaste": true,
+			"editor.formatOnSave": true,
+			"editor.formatOnType": true,
+			"editor.rulers": [80],
+			"editor.tabSize": 2,
+			"editor.wordWrapColumn": 80
+		},
+		"[typescript]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode",
+			"editor.formatOnPaste": true,
+			"editor.formatOnSave": true,
+			"editor.formatOnType": true,
+			"editor.rulers": [80],
+			"editor.tabSize": 2,
+			"editor.wordWrapColumn": 80
+		},
+		"[typescriptreact]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode",
+			"editor.formatOnPaste": true,
+			"editor.formatOnSave": true,
+			"editor.formatOnType": true,
+			"editor.rulers": [80],
+			"editor.tabSize": 2,
+			"editor.wordWrapColumn": 80
+		},
+		"eslint.validate": [
+			"typescript",
+			"typescriptreact"
+		],
+		"eslint.workingDirectories": ["."]
+	},
+	"extensions": {
+		"recommendations": [
+			"esbenp.prettier-vscode",
+			"dbaeumer.vscode-eslint"
+		]
+	}
+}
