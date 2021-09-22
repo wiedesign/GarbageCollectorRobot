@@ -16,7 +16,6 @@ const Controls: React.FC = () =>{
                     <button className="controls__hero__icons__wifi"/>
                 </div>   
             </div>            
-            <button className="controls__clawOpenbtn">Claw Open</button>
             <div className="controls__bottomSection">
                 <div className="controls__bottomSection__actionControls">
                     <ActionControls />

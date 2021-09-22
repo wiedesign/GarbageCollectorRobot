@@ -1,20 +1,9 @@
+
 .controls {
-  background-color: #f6e2bc;
-  padding-bottom: 5%;
-  button:hover {
-    cursor: pointer;
-  }
-
-  &__hero {
-    display: flex;
-    justify-content: space-between;
-    padding: 5%;
-
-    img {
-      width: 174px;
-      height: 174px;
-      object-fit: contain;
-      margin-top: -29px;
+    background-color: #F6E2BC;
+    padding-bottom: 5%;
+    button:hover {
+        cursor: pointer;
     }
 
     &__hero {
@@ -38,6 +27,21 @@
             background-repeat: no-repeat;
             background-position: center;
             margin-right: 20px;
+        }
+
+        &__icons {
+            display: flex;
+            margin-left: 15px;
+
+            &__ble {
+                background-image: url("/images/controller/ble.svg");
+                background-size: 30px;
+            }
+    
+            &__wifi {
+                background-image: url("/images/controller/wifi.svg");
+                background-size: 40px;
+            }
         }
 
         &__video {
@@ -65,21 +69,6 @@
         }
 
         &__left {
-            &__icons {
-                display: flex;
-                margin-left: 15px;
-
-                &__ble {
-                    background-image: url("/images/controller/ble.svg");
-                    background-size: 30px;
-                }
-        
-                &__wifi {
-                    background-image: url("/images/controller/wifi.svg");
-                    background-size: 40px;
-                }
-            }
-
             & > img {
                 margin-top: 140px;
                 width: 128px;
@@ -92,110 +81,35 @@
         display: flex;
         justify-content: space-between;
 
-        &__ble {
-          background-image: url("/images/controller/ble.svg");
-          background-size: 30px;
+        &__actionControls {
+            margin-left: 1%;
         }
 
-        &__wifi {
-          background-image: url("/images/controller/wifi.svg");
-          background-size: 40px;
+        &__movementControls {
+            margin-right: 1%;
         }
-      }
-
-      & > img {
-        margin-top: 140px;
-        width: 128px;
-        height: 123px;
-      }
     }
-  }
-
-  &__clawOpenbtn {
-    width: 138px;
-    height: 63.28px;
-    font-family: Barlow;
-    font-size: 24px;
-    background-color: #f6e2bc;
-    border-radius: 20px;
-    border: 4px solid #c3b292;
-    position: absolute;
-    right: 100px;
-  }
-
-  &__bottomSection {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 100px;
-
-    &__actionControls {
-      margin-left: 1%;
-    }
-
-    &__movementControls {
-      margin-right: 1%;
-    }
-  }
 }
 
 .actionControls {
-  &__container {
-    position: relative;
 
-    .rs-control .rs-range-color {
-      background-color: #a9d09e;
-    }
-    .rs-control .rs-path-color {
-      background-color: #a9d09e;
-    }
-    .rs-control .rs-handle {
-      background-color: #668963;
-    }
-    .rs-control .rs-bg-color {
-      background-color: #f6e2bc;
-    }
-    .actionControls {
-      background-color: green;
-    }
+    &__container {
+        position: relative;
 
-    &__btns {
-      position: absolute;
-      top: 30px;
-      left: 30px;
-      z-index: 3;
-      width: 270px;
-      height: 270px;
-      border-radius: 50%;
-      background: rgba(222, 244, 216, 0.5);
-
-      button {
-        border-radius: 50%;
-        height: 70px;
-        width: 70px;
-        background-color: #f6e2bc;
-        border: 4px solid #c3b292;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-image: url("/images/controller/arrow.svg");
-        background-size: 25px;
-      }
-
-      button:active {
-        background-color: #c3b292;
-      }
-
-      &__up {
-        margin-top: 5%;
-      }
-
-      &__LR {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 5%;
-        margin-bottom: 4%;
-
-        &__left {
-          transform: rotate(-90deg);
+        .rs-control .rs-range-color {
+            background-color: #A9D09E;
+        }
+        .rs-control .rs-path-color {
+            background-color:  #A9D09E;
+        }
+        .rs-control .rs-handle {
+            background-color: #668963;
+        }
+        .rs-control .rs-bg-color {
+            background-color: #F6E2BC
+        }
+        .actionControls {
+            background-color: green;
         }
 
         &__btns {
@@ -247,13 +161,7 @@
                 transform: rotate(180deg);
             }
         }
-      }
-
-      &__down {
-        transform: rotate(180deg);
-      }
     }
-  }
 }
 
 .movementControls {
@@ -323,14 +231,7 @@
     }   
 }
 
-        &__right {
-          background-image: url("/images/controller/neck-right.svg");
-        }
 
-        &__left {
-          background-image: url("/images/controller/neck-left.svg");
-        }
-      }
 
 // media queries IPAD
 
@@ -365,6 +266,21 @@
                 margin-right: 20px;
             }
 
+            &__icons {
+                display: flex;
+                margin-left: 15px;
+
+                &__ble {
+                    background-image: url("/images/controller/ble.svg");
+                    background-size: 30px;
+                }
+        
+                &__wifi {
+                    background-image: url("/images/controller/wifi.svg");
+                    background-size: 40px;
+                }
+            }
+
             &__video {
                 position: relative;
                 background-color: black;
@@ -390,21 +306,6 @@
             }
 
             &__left {
-                &__icons {
-                    display: flex;
-                    margin-left: 15px;
-
-                    &__ble {
-                        background-image: url("/images/controller/ble.svg");
-                        background-size: 30px;
-                    }
-            
-                    &__wifi {
-                        background-image: url("/images/controller/wifi.svg");
-                        background-size: 40px;
-                    }
-                }
-
                 & > img {
                     margin-top: 140px;
                     width: 128px;
