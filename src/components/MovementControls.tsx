@@ -9,17 +9,42 @@ const MovementControls: React.FC = () => {
             claw_button.innerHTML = "Claw Open";
         }
     }
+
+    const handleClawUp = () =>{
+        console.log("ClawUp");
+    }
+
+    const handleClawDown = () =>{
+        console.log("ClawDown");
+    }
+
+    const handleTurnLeft = () =>{
+        console.log("TurnLeft");
+    }
+
+    const handleTurnRight = () =>{
+        console.log("TurnRight");
+    }
+    
     return (
         <section className="movementControls">
         <button className="movementControls__clawBtn" id="clawBtn" onClick={claw_button}>Claw Open</button>
             <div className="movementControls__container">
                 <div className ="movementControls__container__btns">
-                    <button className ="movementControls__container__btns__up" />
+                    <button className ="movementControls__container__btns__up" 
+                        onClick={() => handleClawUp()}
+                    />
                     <div className ="movementControls__container__btns__LR">
-                        <button className ="movementControls__container__btns__LR__left"/>
-                        <button className ="movementControls__container__btns__LR__right"/>
+                        <button className ="movementControls__container__btns__LR__left"
+                            onClick={() => handleTurnLeft()}
+                        />
+                        <button className ="movementControls__container__btns__LR__right"
+                            onClick={() => handleTurnRight()}
+                        />
                     </div>
-                    <button className ="movementControls__container__btns__down"/>
+                    <button className ="movementControls__container__btns__down"
+                        onClick={() => handleClawDown()}
+                    />
                 </div>
             </div> 
         </section>
