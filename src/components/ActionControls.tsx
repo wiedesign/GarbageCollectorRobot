@@ -12,7 +12,7 @@ class Example extends Component {
          lineCap: "round",
          radius: 165,
          width: 30,
-        });
+        }); 
     }
  
     render() {
