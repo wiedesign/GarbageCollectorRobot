@@ -3,7 +3,7 @@ const MovementControls: React.FC = () => {
     function claw_button() {
         let claw_button = document.getElementById('clawBtn') as HTMLElement;
         if(claw_button.innerHTML == "Claw Open-Hello" ) {
-            claw_button.innerHTML = "Claw Closed";
+            claw_button.innerHTML = "Claw Closed-Hello";
         }
         else {
             claw_button.innerHTML = "Claw Open";
