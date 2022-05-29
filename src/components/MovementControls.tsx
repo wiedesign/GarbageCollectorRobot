@@ -6,7 +6,7 @@ const MovementControls: React.FC = () => {
             claw_button.innerHTML = "Claw Closed";
         }
         else {
-            claw_button.innerHTML = "Claw Open ";
+            claw_button.innerHTML = "Claw Open                  ";
         }
     }
     return (
