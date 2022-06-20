@@ -12,6 +12,9 @@ class Example extends Component {
          lineCap: "round",
          radius: 165,
          width: 30,
+         change: function myFun (e: any) {
+            console.log(e.value*255/100);
+        }, 
         }); 
     }
 
